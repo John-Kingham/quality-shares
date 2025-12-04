@@ -11,6 +11,10 @@ assignees: ''
 
 As an ACTOR I can FEATURE so I can BENEFIT.
 
+# Estimated Time to Done
+
+- MIN to MAX days
+
 # Acceptance Criteria
 
 - [ ] Enter a list of acceptance criteria.
