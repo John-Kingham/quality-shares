@@ -10,8 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-from pathlib import Path
 import os
+from pathlib import Path
+import sys
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -96,6 +97,10 @@ WSGI_APPLICATION = "quality_shares.wsgi.application"
 DATABASES = {
     "default": dj_database_url.parse(os.environ.get("DATABASE_URL")),
 }
+
+# Use the default sqlite3 database for testing
+if "test" in sys.argv:
+    DATABASES["default"]["engine"] = "django.db.backends.sqlite3"
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com",
