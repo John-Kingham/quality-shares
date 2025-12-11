@@ -48,7 +48,16 @@ h3 {
 
 /* Header section */
 
+#site-title {
+    display: none;
+}
+
 /* Main section */
+
+.feature-img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Footer section */
 
