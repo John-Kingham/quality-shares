@@ -34,29 +34,38 @@
       href="{% static 'favicons/favicon-16x16.png' %}"
     />
     <link rel="manifest" href="{% static 'favicons/site.webmanifest' %}" />
+    <!-- Font Awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/8f0e12a819.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Custom CSS link -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
   <!-- flex-column and min-vh-100 enable footer to stick to bottom -->
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <!-- Site header with logo and login/out buttons -->
+      <nav class="navbar navbar-expand-sm">
         <div class="container position-relative">
-          <a href="#" class="navbar-brand">LOGO</a>
-          <span class="h1 position-absolute top-50 start-50 translate-middle">
+          <a href="#" class="navbar-brand">
+            <img src="{% static 'images/logo-50x50.png' %}" alt="logo" />
+          </a>
+          <h1 class="position-absolute top-50 start-50 translate-middle">
             Quality Shares
-          </span>
+          </h1>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="#" class="btn btn-primary me-1">Sign up</a>
+              <a href="#" class="btn btn-primary me-1 qs-btn">Sign up</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Log in</a>
+              <a href="#" class="btn btn-outline-primary qs-btn-o">Log in</a>
             </li>
           </ul>
         </div>
       </nav>
-      <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <!-- Main navigation menu -->
+      <nav id="main-nav" class="navbar navbar-expand-sm">
         <div class="container justify-content-center">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -80,7 +89,31 @@
       <!-- Add content here using child templates -->
       {% endblock content %}
     </main>
-    <!-- mt-auto allows footer to stick to bottom of screen -->
-    <footer class="mt-auto">Base Footer</footer>
+    <!-- Footer containing contact details -->
+    <!-- Note: mt-auto allows footer to stick to bottom -->
+    <footer class="mt-auto bg-light">
+      <div class="container py-3">
+        <div class="row">
+          <!-- Contact details -->
+          <div class="col-12 text-center">
+            <h2 class="h5">Contact Details</h2>
+            <p>Email: hello@example.com</p>
+            <p>Address: 123 Example Street, Example City, UK</p>
+          </div>
+          <!-- Social media links -->
+          <div class="col-12 d-flex justify-content-center">
+            <a href="https://www.linkedin.com/" target="_blank" aria-label=""
+              ><i class="fa-brands fa-linkedin social-link"></i
+            ></a>
+            <a href="https://bsky.app/" target="_blank" aria-label=""
+              ><i class="fa-brands fa-square-bluesky social-link"></i
+            ></a>
+            <a href="" target="_blank" aria-label=""
+              ><i class="fa-brands fa-square-facebook social-link"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

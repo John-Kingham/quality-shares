@@ -2,28 +2,60 @@
 
 /* CSS variables */
 :root {
-    --heading-font: "Roboto Slab", sans-serif;
-    --body-font: "Open Sans", sans-serif;
+    --font-heading: "Roboto Slab", sans-serif;
+    --font-body: "Open Sans", sans-serif;
+    --colour-first: #071D49;
+    --colour-second: #0A70DC;
+    --colour-second-highlight: #0857ab;
+    --colour-third: #EFF7FF;
 }
 
 /* Global styles */
 
 body {
-    font-family: var(--body-font);
+    font-family: var(--font-body);
 }
 
 h1,
 h2,
 h3 {
-    font-family: var(--heading-font);
+    font-family: var(--font-heading);
+    color: var(--colour-first);
 }
 
 /* Navigation styles */
+
+#main-nav {
+    background-color: var(--colour-third);
+}
+
+.btn.qs-btn {
+    background-color: var(--colour-second);
+}
+
+.btn.qs-btn:hover {
+    background-color: var(--colour-second-highlight);
+}
+
+.btn.qs-btn-o {
+    color: var(--colour-second);
+}
+
+.btn.qs-btn-o:hover {
+    color: var(--colour-first);
+    background-color: var(--colour-third);
+}
 
 /* Header section */
 
 /* Main section */
 
 /* Footer section */
+
+.social-link {
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--colour-second);
+}
 
 /* Error pages */
