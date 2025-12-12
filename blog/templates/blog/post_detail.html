@@ -10,6 +10,7 @@
         src="{{ post.image.url }}"
         alt="Blog post header image"
     />
+    <p class="text-secondary fw-bold my-3">{{ post.updated | date:"M j, Y" }}</p>
     {{ post.content | safe }}
     </div>
   </article>
