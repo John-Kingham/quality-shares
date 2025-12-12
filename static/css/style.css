@@ -54,6 +54,15 @@ h3 {
 
 /* Main section */
 
+.header-link {
+    text-decoration: none;
+    color: var(--colour-first);
+}
+
+.header-link:hover {
+    text-decoration: underline;
+}
+
 .feature-img {
     max-width: 100%;
     height: auto;

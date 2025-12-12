@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+<!-- Blog post detail -->
+{% block content %}
+<section class="container p-3">
+  <article class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+      <h2>{{ post.title }}</h2>
+    <img
+        class="mx-auto shadow feature-img"
+        src="{{ post.image.url }}"
+        alt="Blog post header image"
+    />
+    {{ post.content | safe }}
+    </div>
+  </article>
+</section>
+{% endblock content %}
