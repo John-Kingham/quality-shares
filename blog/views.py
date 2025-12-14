@@ -1,6 +1,41 @@
 from django.shortcuts import get_object_or_404, render
 from django.views.generic import ListView
-from .models import Post
+from .models import Category, Post
+
+
+class CategoryListView(ListView):
+    """
+    Renders the category list page.
+
+    Models:
+        :model:`blog.Category`
+        :model:`blog.Post`
+
+    Template:
+        :template:`blog/category_list.html`
+
+    Context:
+        categories (QuerySet): All categories.
+        category_posts (dict): Key = categories with posts; value = the related
+        posts.
+    """
+
+    model = Category
+    queryset = Category.objects.all()
+    context_object_name = "categories"
+
+    def get_context_data(self, **kwargs):
+        """Get the template's context."""
+
+        context = super().get_context_data(**kwargs)
+        category_posts = {}
+        num_visible_posts = 4
+        for category in context["categories"]:
+            posts = category.blog_posts.all()
+            if posts:
+                category_posts[category] = posts[:num_visible_posts]
+        context["category_posts"] = category_posts
+        return context
 
 
 class PostListView(ListView):
