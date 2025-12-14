@@ -15,9 +15,9 @@ class CategoryListView(ListView):
         :template:`blog/category_list.html`
 
     Context:
-        categories (QuerySet): All categories.
-        category_posts (dict): Key = categories with posts; value = the related
-        posts.
+        "categories" (QuerySet): All categories
+        "category_posts" (dict): The key is a category with published posts and
+         the value is the published posts.
     """
 
     model = Category
@@ -25,15 +25,23 @@ class CategoryListView(ListView):
     context_object_name = "categories"
 
     def get_context_data(self, **kwargs):
-        """Get the template's context."""
+        """
+        Returns the template's context.
+
+        Return:
+            Context:
+                "categories" (QuerySet): All categories
+                "category_posts" (dict): The key is a category with published
+                posts and the value is the published posts.
+        """
 
         context = super().get_context_data(**kwargs)
         category_posts = {}
         num_visible_posts = 4
         for category in context["categories"]:
-            posts = category.blog_posts.all()
-            if posts:
-                category_posts[category] = posts[:num_visible_posts]
+            published_posts = category.blog_posts.filter(published=True)
+            if published_posts:
+                category_posts[category] = published_posts[:num_visible_posts]
         context["category_posts"] = category_posts
         return context
 
