@@ -12,7 +12,7 @@
       {% else %}
       <img src="{{ post.image.url }}" class="feature-img" alt="Blog post header image">
       {% endif %}
-      <p class="text-secondary fw-bold my-3">{{ post.updated | date:"M j, Y" }}</p>
+      <p class="post-meta">{{ post.updated | date:"M j, Y" }} - {{ post.category.name }}</p>
       {{ post.content | safe }}
     </div>
   </article>
