@@ -69,6 +69,8 @@ h3 {
 }
 
 .feature-img {
+    display: block;
+    margin: 2rem auto;
     max-width: 100%;
     height: auto;
 }

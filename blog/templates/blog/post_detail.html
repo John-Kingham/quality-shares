@@ -1,17 +1,19 @@
 {% extends "base.html" %}
+{% load static %}
+
 <!-- Blog post detail -->
 {% block content %}
 <section class="container p-3">
   <article class="row justify-content-center">
     <div class="col-md-10 col-lg-8">
       <h2>{{ post.title }}</h2>
-    <img
-        class="mx-auto shadow feature-img"
-        src="{{ post.image.url }}"
-        alt="Blog post header image"
-    />
-    <p class="text-secondary fw-bold my-3">{{ post.updated | date:"M j, Y" }}</p>
-    {{ post.content | safe }}
+      {% if "placeholder" in post.image.url %}
+      <img src="{% static 'images/default.jpg' %}" class="feature-img" alt="Blog post header image">
+      {% else %}
+      <img src="{{ post.image.url }}" class="feature-img" alt="Blog post header image">
+      {% endif %}
+      <p class="text-secondary fw-bold my-3">{{ post.updated | date:"M j, Y" }}</p>
+      {{ post.content | safe }}
     </div>
   </article>
 </section>
