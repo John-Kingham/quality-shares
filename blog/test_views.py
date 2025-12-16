@@ -41,7 +41,7 @@ class TestPostViews(TestCase):
 
     def test_post_list_view(self):
         """Test that the post list page contains the correct information"""
-        response = self.client.get(reverse("post-list"))
+        response = self.client.get(reverse("post_list"))
         self.assertEqual(response.status_code, HTTPStatus.OK)
         self.assertContains(response, self.published_title)
         self.assertContains(response, self.published_description)
@@ -50,7 +50,7 @@ class TestPostViews(TestCase):
 
     def test_post_detail_view(self):
         """Test that the post detail page contains the correct information"""
-        post_detail_url = reverse("post-detail", args=[self.published_slug])
+        post_detail_url = reverse("post_detail", args=[self.published_slug])
         response = self.client.get(post_detail_url)
         self.assertEqual(response.status_code, HTTPStatus.OK)
         self.assertContains(response, self.published_title)
