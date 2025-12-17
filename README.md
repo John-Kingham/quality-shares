@@ -105,20 +105,24 @@ I used wireframes to add detail to the structural elements above. These wirefram
 
 #### Colour palette
 
-The colour palette was inspired by the colours used by [Hargreaves Lansdown](https://www.hl.co.uk/).
+The colour palette for Quality Shares was inspired by the colours used by [Hargreaves Lansdown](https://www.hl.co.uk/), a leading UK investment platform with the kind of subtle, professional look the product owner was looking for.
 
-- #ABC123 - EXAMPLE COLOUR!
+- #071D49 (dark blue) - The first colour
+- #0A70DC (medium blue) - The second colour
+- #0857AB (darker medium blue) - A "highlight" version of the second colour, primarily used for button hover effects
+- #EFF7FF (very light blue) - The third colour
+- #C2E0FF (darker light blue) - A "highlight" version of the third colour, primarily used for button hover effects.
 
 #### Custom fonts
 
 The site uses two custom fonts from Google Fonts.
 
-- XXX: EXAMPLE FONT
-- ZZZ: EXAMPLE FONT
+- [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab): For headings
+- [Open Sans](https://fonts.google.com/specimen/Open+Sans): For non-heading text
 
 #### Content
 
-All model-based content (e.g. blog posts, portfolio page content) was generated using [Microsoft Co-Pilot](https://copilot.microsoft.com/).
+All model-based content (e.g. blog posts, portfolio page content, etc.) was generated using [Microsoft Co-Pilot](https://copilot.microsoft.com/).
 
 ## Technologies Used
 
