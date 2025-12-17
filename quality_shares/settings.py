@@ -15,20 +15,18 @@ from pathlib import Path
 import sys
 import dj_database_url
 
+if os.path.isfile("env.py"):
+    import env  # noqa: F401 - Ignore unreferenced import warning
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-dev_environment = os.path.isfile("env.py")
-if dev_environment:
-    import env  # noqa: F401 - Ignore unreferenced import warning
-
-    DEBUG = True
+DEBUG = os.environ.get("DEBUG")
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY")
