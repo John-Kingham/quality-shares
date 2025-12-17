@@ -55,27 +55,27 @@ I created user stories to define the scope of the project. The stories are liste
 
 #### Sprint 1: Goal - To deploy the first version of the site, with Blog Post editing and a Portfolio page.
 
-- As an Admin, I can create, update and delete blog posts, so I can attract new Users and nurture them with regular new content. (must-have)
-- As an Admin, I can create, update and delete content about our investment performance, so Users can see how well our expertise has performed in practice. (should-have)
-- As a User, I can see the author’s investment performance, so I can decide if they know what they’re talking about. (should-have)
-- As a User, I can see a website that looks good and works well, with an understated professional design, so I’m not put off by something that looks overly flashy and gimmicky. (must-have)
-- As a User, I can see the company's contact details, so I can use email, phone or social media to have a private conversation with someone at the company to ask them questions. (must-have)
+1. As an Admin, I can create, update and delete blog posts, so I can attract new Users and nurture them with regular new content. (must-have)
+1. As an Admin, I can create, update and delete content about our investment performance, so Users can see how well our expertise has performed in practice. (should-have)
+1. As a User, I can see the author’s investment performance, so I can decide if they know what they’re talking about. (should-have)
+1. As a User, I can see a website that looks good and works well, with an understated professional design, so I’m not put off by something that looks overly flashy and gimmicky. (must-have)
+1. As a User, I can see the company's contact details, so I can use email, phone or social media to have a private conversation with someone at the company to ask them questions. (must-have)
 
 #### Sprint 2: Goal - Add the Homepage and Blog Archive page.
 
-- As an Admin, I can categorise articles, so Users can more quickly find the type of content they’re looking for. (could-have)
-- As a User, I can see blog posts for different topic categories (e.g. market valuations, company reviews, investing strategies), so I can easily find the type of content I want to read. (could-have)
-- As an Admin, I can authorise, edit or delete user-generated blog comments, to block or remove inappropriate content. (must-have)
-- As a User, I can find and read useful information about relevant investments and investing, so I can become a better investor and discover worthwhile investments. (must-have)
+6. As an Admin, I can categorise articles, so Users can more quickly find the type of content they’re looking for. (could-have)
+6. As a User, I can see blog posts for different topic categories (e.g. market valuations, company reviews, investing strategies), so I can easily find the type of content I want to read. (could-have)
+6. As an Admin, I can authorise, edit or delete user-generated blog comments, to block or remove inappropriate content. (must-have)
+6. As a User, I can find and read useful information about relevant investments and investing, so I can become a better investor and discover worthwhile investments. (must-have)
 
 #### Sprint 4: Goal - Add user comments, premium content and an about page.
 
-- As a User, I can converse with other users and the admin, so I can have engaging conversations with like-minded people. (must-have)
-- As an Admin, I can create free and premium content, and control access accordingly. (could-have)
-- As a User, I can easily sign up to read premium content, so I can further benefit from the author’s knowledge and experience. (could-have)
-- As an Admin, I can create, update and delete "about" content, so Users know something about the people behind the articles they’re reading. (should-have)
-- As a User, I can read about the people behind the website, so I can decide if they’re trustworthy. (should-have)
-- As a User, if there is an error loading a page then I'm shown a helpful error page in the style of the overall website, so I'm not put off by badly styled error pages. (must-have)
+10. As a User, I can converse with other users and the admin, so I can have engaging conversations with like-minded people. (must-have)
+10. As an Admin, I can create free and premium content, and control access accordingly. (could-have)
+10. As a User, I can easily sign up to read premium content, so I can further benefit from the author’s knowledge and experience. (could-have)
+10. As an Admin, I can create, update and delete "about" content, so Users know something about the people behind the articles they’re reading. (should-have)
+10. As a User, I can read about the people behind the website, so I can decide if they’re trustworthy. (should-have)
+10. As a User, if there is an error loading a page then I'm shown a helpful error page in the style of the overall website, so I'm not put off by badly styled error pages. (must-have)
 
 ### Structure Plane
 
@@ -128,17 +128,29 @@ All model-based content (e.g. blog posts, portfolio page content, etc.) was gene
 
 ### Languages
 
-- HTML
-- CSS
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Python](https://www.python.org/)
 
 ### Installed Python Libraries
 
-- [A LIBRARY]
-- (plus required dependencies of the above libraries)
+- [cloudinary](https://pypi.org/project/cloudinary/) (Python and Django SDK for Cloudinary)
+- [crispy-bootstrap5](https://pypi.org/project/crispy-bootstrap5/) (Bootstrap5 template pack for django-crispy-forms)
+- [django](https://pypi.org/project/Django/) (A high-level Python web framework)
+- [django-allauth](https://pypi.org/project/django-allauth/) (Django authentication, registration, account management, social account authentication)
+- [django-crispy-forms](https://pypi.org/project/django-crispy-forms/) (Best way to have Django DRY forms)
+- [django-summernote](https://pypi.org/project/django-summernote/) (Summernote plugin for Django)
+- [dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) (Django package that provides Cloudinary storages for media and static files as well as management commands for removing unnecessary files)
+- [dj-database-url](https://pypi.org/project/dj-database-url/) (Use Database URLs in your Django Application)
+- [gunicorn](https://pypi.org/project/gunicorn/) (WSGI HTTP Server for UNIX)
+- [psycopg2](https://pypi.org/project/psycopg2/) (Python-PostgreSQL Database Adapter)
+- [urllib3](https://pypi.org/project/urllib3/) (HTTP library with thread-safe connection pooling, file post, and more)
+- [whitenoise](https://pypi.org/project/whitenoise/) (Radically simplified static file serving for WSGI applications)
+- Required dependencies for the above libraries
 
 ### Other Technologies
-- [PostgreSQL]
+- [PostgreSQL](https://www.postgresql.org/) (a PostgreSQL database was supplied for the project by Code Institute)
 
 ## Features
 
