@@ -42,11 +42,11 @@ h3 {
     background-color: var(--colour-second-highlight);
 }
 
-.btn.qs-btn-o {
+.btn.qs-btn-outline {
     color: var(--colour-second);
 }
 
-.btn.qs-btn-o:hover {
+.btn.qs-btn-outline:hover {
     color: var(--colour-first);
     background-color: var(--colour-third);
 }

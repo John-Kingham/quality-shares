@@ -1,6 +1,9 @@
 {% load static %}
 {% url "post_list" as post_list_url %}
 {% url "portfolio" as portfolio_url %}
+{% url 'account_login' as login_url %}
+{% url 'account_signup' as signup_url %}
+{% url 'account_logout' as logout_url %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -44,12 +47,27 @@
             </h1>
           </a>
           <ul class="navbar-nav">
+            {% if user.is_authenticated %}
             <li class="nav-item">
-              <a href="#" class="btn btn-primary me-1 qs-btn">Sign up</a>
+              <a
+                class="btn btn-outline-primary qs-btn-outline {% if request.path == logout_url %}active{% endif %}" 
+                href="{{ logout_url }}"
+              >Log out</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a 
+                class="btn btn-primary me-1 qs-btn {% if request.path == signup_url %}active{% endif %}"
+                href="{{ signup_url }}"
+              >Sign up</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="btn btn-outline-primary qs-btn-o">Log in</a>
+              <a
+                class="btn btn-outline-primary qs-btn-outline {% if request.path == login_url %}active{% endif %}"
+                href="{{ login_url }}"
+              >Log in</a>
             </li>
+            {% endif %}
           </ul>
         </div>
       </nav>
