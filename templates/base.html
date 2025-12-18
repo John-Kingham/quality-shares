@@ -50,20 +50,20 @@
             {% if user.is_authenticated %}
             <li class="nav-item">
               <a
-                class="btn btn-outline-primary qs-btn-outline {% if request.path == logout_url %}active{% endif %}" 
+                class="btn btn-outline-primary qs-btn-outline {% if request.path == logout_url %}nav-active" aria-current="page{% endif %}" 
                 href="{{ logout_url }}"
               >Log out</a>
             </li>
             {% else %}
             <li class="nav-item">
               <a 
-                class="btn btn-primary me-1 qs-btn {% if request.path == signup_url %}active{% endif %}"
+                class="btn btn-primary me-1 qs-btn {% if request.path == signup_url %}nav-active" aria-current="page{% endif %}"
                 href="{{ signup_url }}"
               >Sign up</a>
             </li>
             <li class="nav-item">
               <a
-                class="btn btn-outline-primary qs-btn-outline {% if request.path == login_url %}active{% endif %}"
+                class="btn btn-outline-primary qs-btn-outline {% if request.path == login_url %}nav-active" aria-current="page{% endif %}"
                 href="{{ login_url }}"
               >Log in</a>
             </li>
@@ -78,13 +78,13 @@
             <li class="nav-item main-nav-item">
               <a
                 href="{% url 'post_list' %}"
-                class="nav-link {% if request.path == post_list_url %}active" aria-current="page{% endif %}">Archive</a
+                class="nav-link {% if request.path == post_list_url %}nav-active" aria-current="page{% endif %}">Archive</a
               >
             </li>
             <li class="nav-item main-nav-item">
               <a
                 href="{% url 'portfolio' %}"
-                class="nav-link {% if request.path == portfolio_url %}active"aria-current="page{% endif %}">Portfolio</a
+                class="nav-link {% if request.path == portfolio_url %}nav-active"aria-current="page{% endif %}">Portfolio</a
               >
             </li>
             <li class="nav-item main-nav-item">

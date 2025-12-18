@@ -51,6 +51,10 @@ h3 {
     background-color: var(--colour-third);
 }
 
+.nav-active {
+    font-weight: bold;
+}
+
 /* Header section */
 
 #site-title {
@@ -88,6 +92,10 @@ h3 {
 .post-thumb {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
+}
+
+.btn.qs-btn {
+    color: var()
 }
 
 /* Footer section */
