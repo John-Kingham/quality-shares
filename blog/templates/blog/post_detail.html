@@ -24,8 +24,9 @@
       <h3>Continue the discussion</h3>
       <div class="card-body">
         {% for comment in comments %}
-        <article class="pb-3">
+        <article class="p-3 rounded-3 {% if not comment.approved and comment.author == user %}bg-light{% elif not comment.approved %}d-none{% endif %} ">
           <p class="post-meta">{{ comment.author }} - {{ comment.created  | date:"M j, Y" }}</p>
+          <p class="fw-bold fst-italic text-danger">{% if not comment.approved and comment.author == user %}This comment is waiting to be approved.{% endif %}</p>
           <p>{{ comment.content }}</p>
         </article>
         {% endfor %}
