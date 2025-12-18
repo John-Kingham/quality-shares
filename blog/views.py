@@ -5,7 +5,7 @@ from .models import Category, Post
 
 class CategoryListView(ListView):
     """
-    Renders the category list page.
+    Render the category list page.
 
     Models:
         :model:`blog.Category`
@@ -26,7 +26,7 @@ class CategoryListView(ListView):
 
     def get_context_data(self, **kwargs):
         """
-        Returns the template's context.
+        Return the template's context.
 
         Return:
             Context:
@@ -48,7 +48,7 @@ class CategoryListView(ListView):
 
 class PostListView(ListView):
     """
-    Renders the post list page.
+    Render the post list page.
 
     Models:
         :model:`blog.Post`
@@ -67,7 +67,7 @@ class PostListView(ListView):
 
 def post_detail(request, slug):
     """
-    Returns the post details page for a post.
+    Return the post details page for a post.
 
     Args:
         request (HttpRequest):
@@ -88,5 +88,8 @@ def post_detail(request, slug):
     """
     published_posts = Post.objects.filter(published=True)
     post = get_object_or_404(published_posts, slug=slug)
-    context = {"post": post}
+    context = {
+        "post": post,
+        "comments": post.comments.all().order_by("-created")
+    }
     return render(request, "blog/post_detail.html", context)

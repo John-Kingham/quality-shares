@@ -17,4 +17,20 @@
     </div>
   </article>
 </section>
+<!-- Blog comments -->
+<section class="container p-3">
+  <article class="row justify-content-center">
+    <div class="col-md-8 col-lg-6 card p-3">
+      <h3>Continue the discussion</h3>
+      <div class="card-body">
+        {% for comment in comments %}
+        <article class="pb-3">
+          <p class="post-meta">{{ comment.author }} - {{ comment.created  | date:"M j, Y" }}</p>
+          <p>{{ comment.content }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+</section>
 {% endblock content %}

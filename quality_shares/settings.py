@@ -47,20 +47,27 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "django.contrib.sites",
     "cloudinary_storage",
     "blog",
     "cloudinary",
     "django_summernote",
     "portfolio",
-    "django.contrib.sites",
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "crispy_forms",
+    "crispy_bootstrap5",
 ]
 
+# AllAuth constants
 SITE_ID = 1
 LOGIN_REDIRECT_URL = "/"
 LOGOUT_REDIRECT_URL = "/"
+
+# Crispy Forms constants
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -142,6 +149,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# For AllAuth
 ACCOUNT_EMAIL_VERIFICATION = "none"
 
 # Internationalization
