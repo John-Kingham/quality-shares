@@ -10,8 +10,9 @@ class CategoryAdmin(SummernoteModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ("author", "approved", "summary", "post")
-    list_filter = ("author", "approved")
+    list_display = ("author", "approved", "summary", "post", "created")
+    list_filter = ("approved", "author")
+    ordering = ["-created"]
 
     def summary(self, comment):
         """Returns summarised content that fits on the admin screen."""
