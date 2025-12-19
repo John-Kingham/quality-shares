@@ -5,6 +5,7 @@ from cloudinary.models import CloudinaryField
 
 class Category(models.Model):
     """A category of blog posts."""
+
     name = models.CharField(max_length=100, unique=True)
     description = models.TextField(blank=True)
 
@@ -24,6 +25,7 @@ class Post(models.Model):
         :model:`auth.User`.
         :model:`post.Category`.
     """
+
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
@@ -38,6 +40,7 @@ class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     description = models.CharField(max_length=150, blank=True)
     content = models.TextField(blank=True)
+    premium_content = models.TextField(blank=True)
     slug = models.SlugField(max_length=200, unique=True)
     image = CloudinaryField("image", default="placeholder")
     created = models.DateTimeField(auto_now_add=True)
@@ -58,6 +61,7 @@ class Comment(models.Model):
         :model:`auth.User`
         :model:`blog.Post`
     """
+
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name="comments"
     )
