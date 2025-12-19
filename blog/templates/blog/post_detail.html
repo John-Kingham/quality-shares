@@ -15,12 +15,27 @@
       {% endif %}
       <p class="post-meta">{{ post.updated | date:"M j, Y" }} - {{ post.category.name }}</p>
       {{ post.content | safe }}
+      {% if user.is_authenticated %}
+      {{ post.premium_content | safe }}
+      {% else %}
+      <div class="card p-3 border-3 bg-light">
+        <h2>Premium content</h2>
+        <div class="card-body">
+          <p>The rest of this article is available to logged-in subscribers only.</p>
+          <p>To view this content, please sign-up or log-in.</p>
+          <div class="flex">
+            <a class="btn btn-primary me-1 qs-btn" href="{{ signup_url }}">Sign up</a>
+            <a class="btn btn-outline-primary qs-btn-outline" href="{{ login_url }}">Log in</a>
+          </div>
+        </div>
+      </div>
+      {% endif %}
     </div>
   </article>
 </section>
 <!-- Blog comments section -->
 <section class="container p-3">
-  <article class="row justify-content-center">
+  <div class="row justify-content-center">
     <div class="col-md-8 col-lg-6 card p-3">
       <h3>Continue the discussion</h3>
       <!-- Comment form -->
@@ -59,7 +74,7 @@
         {% endfor %}
       </div>
     </div>
-  </article>
+  </div>
 </section>
 
 <!-- Modal: Confirm comment delete -->

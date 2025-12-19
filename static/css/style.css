@@ -101,6 +101,10 @@ h3 {
 
 /* Footer section */
 
+#base-footer {
+    background-color: var(--colour-third);
+}
+
 .social-link {
     font-size: 2rem;
     padding: 1rem;
