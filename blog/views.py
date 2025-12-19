@@ -1,9 +1,10 @@
 from http import HTTPMethod
 from django.contrib import messages
-from django.shortcuts import get_object_or_404, render
+from django.http import HttpResponseRedirect
+from django.shortcuts import get_object_or_404, render, reverse
 from django.views.generic import ListView
 from .forms import CommentForm
-from .models import Category, Post
+from .models import Category, Comment, Post
 
 
 class CategoryListView(ListView):
@@ -135,5 +136,37 @@ def _save_comment(request, post):
         message = "Your comment is awaiting approval."
         messages.add_message(request, messages.SUCCESS, message)
     else:
-        message = "Error: Your comment was invalid."
+        message = "Error: Your comment has not been saved."
         messages.add_message(request, messages.ERROR, message)
+
+
+def edit_comment_view(request, slug, comment_id):
+    """
+    Save an edited comment.
+
+    Args:
+        request (HttpRequest):
+            A POST request that contains CommentForm data for the comment.
+        slug (str): The related post's slug.
+        comment_id (int): The comment's ID.
+
+    Models:
+        Comment
+
+    Messages:
+        SUCCESS: If the updated comment is saved.
+        ERROR: If there is an error and the comment isn't saved.
+    """
+    if request.method == HTTPMethod.POST:
+        comment = get_object_or_404(Comment, pk=comment_id)
+        comment_form = CommentForm(data=request.POST, instance=comment)
+        if comment_form.is_valid() and request.user == comment.author:
+            comment = comment_form.save(commit=False)
+            comment.approved = False
+            comment.save()
+            message = "Your edited comment is awaiting approval."
+            messages.add_message(request, messages.SUCCESS, message)
+        else:
+            message = "Error: Your comment has not been updated."
+            messages.add_message(request, messages.ERROR, message)
+    return HttpResponseRedirect(reverse("post_detail", args=[slug]))
