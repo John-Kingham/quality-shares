@@ -170,3 +170,39 @@ def edit_comment_view(request, slug, comment_id):
             message = "Error: Your comment has not been updated."
             messages.add_message(request, messages.ERROR, message)
     return HttpResponseRedirect(reverse("post_detail", args=[slug]))
+
+
+def delete_comment_view(request, slug, comment_id):
+    """
+    Delete a comment and reload the post details page.
+
+    Only delete the comment ff the request's user is the comment's author.
+
+    Args:
+        request (HTTPRequest): A request where the user is the comment author.
+        slug (str): The slug for the comment's post.
+        comment_id (int): The comment's ID.
+
+    Models:
+        Comment
+
+    Template:
+        blog/post_details.html
+
+    Messages:
+        SUCCESS: If the comment is deleted from the database.
+        ERROR: If the request's user isn't the comment's author.
+
+    Returns:
+        HttpResponseRedirect:
+            Redirect back to the post detail page for the comment's post.
+    """
+    comment = get_object_or_404(Comment, pk=comment_id)
+    if request.user == comment.author:
+        comment.delete()
+        message = "Your comment has been deleted."
+        messages.add_message(request, messages.SUCCESS, message)
+    else:
+        message = "You cannot delete someone else's comment."
+        messages.add_message(request, messages.ERROR, message)
+    return HttpResponseRedirect(reverse("post_detail", args=[slug]))

@@ -21,9 +21,10 @@ class TestBlogViews(TestCase):
         self.category_no_published_post.save()
 
         # Set up a published post
+        self.user_password = "test-password"
         self.user = User.objects.create_superuser(
             username="test-username",
-            password="test-password",
+            password=self.user_password,
             email="test@example.com",
         )
         self.published_post = Post(
@@ -85,7 +86,6 @@ class TestBlogViews(TestCase):
             "post_detail", args=[self.published_post.slug]
         )
         response = self.client.get(post_detail_url)
-        print(response.content.decode())
         self.assertEqual(response.status_code, HTTPStatus.OK)
         self.assertContains(response, self.published_post.title)
         self.assertContains(response, self.published_post.content)
@@ -101,3 +101,17 @@ class TestBlogViews(TestCase):
         self.assertContains(response, self.published_post.category.name)
         self.assertNotContains(response, self.draft_post.title)
         self.assertNotContains(response, self.draft_post.category.name)
+
+    def test_new_comment_submission(self):
+        """Test posting of a new comment."""
+        self.client.login(
+            username=self.user.username, password=self.user_password
+        )
+        comment_form_data = {"content": "Comment body"}
+        response = self.client.post(
+            reverse("post_detail", args=[self.published_post.slug]),
+            comment_form_data,
+        )
+        self.assertEqual(response.status_code, HTTPStatus.OK)
+        self.assertContains(response, "Your comment is awaiting approval.")
+        self.assertContains(response, comment_form_data["content"])

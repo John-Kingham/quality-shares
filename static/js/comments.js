@@ -29,4 +29,25 @@ function addEditCommentEventListeners() {
   }
 }
 
+/**
+ * When the comment delete button is clicked, set up and display the delete
+ * comment modal.
+ */
+function addDeleteCommentEventHandlers() {
+  const deleteModal = new bootstrap.Modal(
+    document.querySelector("#delete-modal")
+  );
+  const deleteButtons = document.querySelectorAll(".delete-btn");
+  const confirmDeleteButton = document.querySelector("#confirm-delete");
+
+  for (const deleteButton of deleteButtons) {
+    deleteButton.addEventListener("click", (e) => {
+      const commentId = e.target.getAttribute("data-comment-id");
+      confirmDeleteButton.href = `delete_comment/${commentId}`;
+      deleteModal.show();
+    });
+  }
+}
+
 addEditCommentEventListeners();
+addDeleteCommentEventHandlers();
