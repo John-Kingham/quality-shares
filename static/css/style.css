@@ -58,18 +58,18 @@ h3 {
 
 /* Header section */
 
-#site-title {
+#header-title {
     display: none;
 }
 
 /* Main section */
 
-.header-link {
+.heading-link {
     text-decoration: none;
     color: var(--colour-first);
 }
 
-.header-link:hover {
+.heading-link:hover {
     text-decoration: underline;
 }
 
