@@ -115,6 +115,10 @@ h3 {
   color: var(--colour-second);
 }
 
+.social-link:hover {
+  color: var(--colour-second-highlight);
+}
+
 /* Error pages */
 
 /* Media queries */
