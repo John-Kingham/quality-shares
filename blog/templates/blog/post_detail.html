@@ -54,7 +54,7 @@
           <!-- Comments -->
           {% for comment in comments %}
           {% if comment.approved or user == comment.author %}
-          <article class="py-3 rounded-3 {% if not comment.approved %}bg-light{% endif %} ">
+          <article class="py-3 rounded-3 {% if not comment.approved %}px-3 bg-light{% endif %} ">
             <p class="post-meta">
               {{ comment.author }} - {{ comment.created  | date:"M j, Y" }}
             </p>
