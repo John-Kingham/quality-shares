@@ -7,14 +7,9 @@
     <div class="col-md-10 col-lg-8">
       <h2>{{ about.title }}</h2>
       <figure class="d-flex flex-column align-items-center">
-        <img
-          class="shadow feature-img"
-          src="{{ about.image.url }}"
-          alt="our employees"
-        />
-        <figcaption class="text-secondary">
-          {{ about.image_caption }}
-        </figcaption>
+        <!-- alt is blank so screen readers only read the figcaption text -->
+        <img class="shadow feature-img" src="{{ about.image.url }}" alt="">
+        <figcaption class="text-secondary">{{ about.image_caption }}</figcaption>
       </figure>
       <div class="my-3">
         {{ about.content | safe }}

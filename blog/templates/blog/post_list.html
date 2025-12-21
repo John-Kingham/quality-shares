@@ -11,10 +11,11 @@
       <div class="card my-3">
         <div class="row g-0">
           <div class="col-md-4">
+            <!-- alt is blank so screen readers skip these decorative images -->
             {% if "placeholder" in post.image.url %}
-            <img src="{% static 'images/default.jpg' %}" class="img-fluid post-thumb" alt="...">
+            <img src="{% static 'images/default.jpg' %}" class="img-fluid post-thumb" alt="">
             {% else %}
-            <img src="{{ post.image.url }}" class="img-fluid post-thumb" alt="...">
+            <img src="{{ post.image.url }}" class="img-fluid post-thumb" alt="">
             {% endif %}
           </div>
           <div class="col-md-8">

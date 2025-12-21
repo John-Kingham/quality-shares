@@ -7,7 +7,8 @@
     <div class="col-md-10 col-lg-8">
       <h2>{{ portfolio.title }}</h2>
       <figure class="d-flex flex-column align-items-center my-3">
-        <img class="shadow feature-img" src="{{ portfolio.image.url }}" alt="investment chart">
+        <!-- alt is blank so screen readers only read the figcaption text -->
+        <img class="shadow feature-img" src="{{ portfolio.image.url }}" alt="">
         <figcaption class="text-secondary">{{ portfolio.image_caption }}</figcaption>
       </figure>
       {{ portfolio.content | safe }}

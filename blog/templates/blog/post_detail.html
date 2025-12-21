@@ -9,9 +9,10 @@
     <div class="col-md-10 col-lg-8">
       <h2>{{ post.title }}</h2>
       {% if "placeholder" in post.image.url %}
-      <img src="{% static 'images/default.jpg' %}" class="feature-img" alt="Blog post header image">
+      <!-- alt is blank so screen readers skip these decorative images -->
+      <img src="{% static 'images/default.jpg' %}" class="feature-img" alt="">
       {% else %}
-      <img src="{{ post.image.url }}" class="feature-img" alt="Blog post header image">
+      <img src="{{ post.image.url }}" class="feature-img" alt="">
       {% endif %}
       <p class="post-meta">{{ post.updated | date:"M j, Y" }} - {{ post.category.name }}</p>
       {{ post.content | safe }}
