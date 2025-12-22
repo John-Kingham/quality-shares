@@ -15,8 +15,8 @@ Jim already has a Substack where he publishes free weekly articles to build up h
 ## Table of Contents
 
 - [User Experience Design](#user-experience-design)
-- [Technologies Used](#technologies-used)
 - [Data Model](#data-model)
+- [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Project Management](#project-management)
 - [Testing](#testing)
@@ -159,11 +159,11 @@ The surface plane is where the fine details of the user interface are chosen.
 
 The site's colour palette was inspired by the colours used by [Hargreaves Lansdown](https://www.hl.co.uk/), a leading UK investment platform with the kind of subtle, professional look the product owner was looking for.
 
-- #071D49 (dark blue) - The first colour
-- #0A70DC (medium blue) - The second colour
+- #071D49 (dark blue) - The primary colour
+- #0A70DC (medium blue) - The secondary colour
 - #0857AB (darker medium blue) - A "highlight" version of the second colour, primarily used for button hover effects
-- #EFF7FF (very light blue) - The third colour
-- #C2E0FF (darker light blue) - A "highlight" version of the third colour, primarily used for button hover effects.
+- #EFF7FF (very light blue) - The tertiary colour
+- #C2E0FF (darker light blue) - A "highlight" version of the tertiary colour, primarily used for button hover effects
 
 #### Custom Fonts
 
@@ -175,6 +175,16 @@ The site uses two custom fonts from Google Fonts.
 #### Content
 
 All model-based content (e.g. blog posts, portfolio page content, etc.) was generated using [Microsoft Co-Pilot](https://copilot.microsoft.com/).
+
+## Data Model
+
+During the Structure Plane, I created a structural entitiy relationship diagram, showing potential database tables and their relationships:
+
+![ERD structural diagram](/docs/images/erd/erd-structure.png)
+
+In the Skeleton Plane, I added fields to the data model tables that were most likely to be implemented. I also simplified the data model that related to premium blog content, by removing the SubscriptionTier table and replacing it with a Premium Content field in the Post table.
+
+![ERD detail diagram](/docs/images/erd/erd-skeleton.png)
 
 ## Technologies Used
 
@@ -204,21 +214,45 @@ All model-based content (e.g. blog posts, portfolio page content, etc.) was gene
 ### Other Technologies
 - [PostgreSQL](https://www.postgresql.org/) (a PostgreSQL database was supplied for the project by Code Institute)
 
-## Data Model
-
-During the Structure Plane, I created a structural entitiy relationship diagram, showing potential database tables and their relationships:
-
-![ERD structural diagram](/docs/images/erd/erd-structure.png)
-
-In the Skeleton Plane, I added fields to the data model tables that were most likely to be implemented. I also simplified the data model that related to premium blog content, by removing the SubscriptionTier table and replacing it with a Premium Content field in the Post table.
-
-![ERD detail diagram](/docs/images/erd/erd-skeleton.png)
-
 ## Features
 
 ### Implemented Features
 
-#### Header navigation
+#### Header Navigation
+
+[IMAGE OF HEADER NAV]
+- Each page contains a header navigation section.
+- This section contains the site's logo and title in the primary dark blue colour. The site title has a large font size and uses the site's custom headings font.
+- This section also contains sign-up and log-in buttons. The sign-up button is solid and uses the secondary blue as its background colour and white as a high-contrast text colour. The button's colour changes on hover to provide visual feedback. The log-in button has a white background and uses the secondary blue colour for text. On hover, this button's background switches to the tertiary blue colour to give the user visual feedback. Identical sign-up and log-in buttons are used across the site.
+- When the user is logged in, the sign-up and log-in buttons are replaced by a log-out button, which uses the same styling as the log-in button.
+- The header navigation section also displays messages to users, providing additional feedback for certain activities. These include logging in and logging out, as well as creating, deleting and updating comments.
+- This section is useful to users for many reasons. It provides a consistent look-and-feel at the start of each page, it enables users to easily navigate around the site, it enables users to log in and out, and it gives helpful feedback in the form of pop-up messages.
+
+#### Posts by Category
+
+#### Footer Contact Details
+
+#### List of Posts (Post Archive)
+
+#### Blog Post Content
+
+#### Blog Post Premium Content
+
+#### Blog Post Comments
+
+#### Sign up / Log in / Log out
+
+#### Portfolio Information
+
+#### About Information
+
+### Future Features
+
+#### Email Newsletter
+
+#### Contact Form
+
+#### View Posts for a Category
 
 ## Project Management
 
