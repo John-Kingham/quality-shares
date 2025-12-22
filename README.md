@@ -235,9 +235,9 @@ In the Skeleton Plane, I added fields to the data model tables that were most li
 
 - The homepage contains a list of blog posts grouped by category (e.g. Market Valuations, Company Reviews, Investment Strategy, etc). 
 - The category name and post titles are in the primary dark blue colour and use the site's custom headings font.
-- Each blog post's feature image, title and date are shown within a bordered "card" with rounded corners. The border is in a generic light grey colour which is not explicitly part of the site's colour palette. This design cleanly separates one post from another, while providing a minimalist, modern look and feel. 
+- Each blog post's feature image, title and last updated date are shown within a bordered "card" with rounded corners. The border is in a generic light grey colour which is not explicitly part of the site's colour palette. This design cleanly separates one post from another, while providing a minimalist, modern look and feel. 
 - Each post's title links to the post's detail page. As the title is a link, it provides visual feedback on hover by displaying an underline.
-- The post's date is in the site's custom body font and the darker "highlight" version of the secondary blue colour.
+- The post's last updated date is in the site's custom body font and the darker "highlight" version of the secondary blue colour.
 - The section and "card" backgrounds are plain white, to avoid distracting users from the content, which is the most important part of the site.
 - This section is useful to users because it shows them the various content topics available on the site, and it helps them quickly find blog posts about a specific topic.
 
@@ -258,13 +258,21 @@ In the Skeleton Plane, I added fields to the data model tables that were most li
 
 - The Archive page contains a page heading and a list of all blog posts, sorted by creation date in descending order (newest to oldest).
 - As with other sections, this section's headings and post titles use the site's custom heading font and the primary dark blue colour. 
-- Posts are shown in a similar "card" format to the Post by Category (homepage) section. The main difference is that on wide screens, cards in this section are shown in a single column with each card having a horizontal internal layout, whereas in the Posts by Category section the cards have a vertical internal layout and are stacked side-by-side, two-by-two.
+- Posts are shown in a similar "card" format to the Post by Category (homepage) section, with each card containing the post's feature image, title and last updated date. The main difference is that on wide screens, cards in this section are shown in a single column with each card having a horizontal internal layout, whereas in the Posts by Category section the cards have a vertical internal layout and are stacked side-by-side, two-by-two.
 - This section lacks pagination, but the site currently has relatively little content so this isn't a major issue, and pagination can easily be added in a future release.
 - This section is useful to users as it allows them to quickly scan through all posts on the site, especially the most recent posts as these are listed first.
 
-#### Blog Post Content
+#### Blog Post Detail
 
+[IMAGE OF POST DETAIL SECTION]
 
+- Clicking on a blog post title on either the List of Posts section or the Posts by Category section takes the user to a detail page for that post.
+- This section shows the post's title, feature image, updated date, category and free content. Premium content and comments are shown on the same page, but these are separate sections and I explain them in more detail below.
+- The title uses the site's primary dark blue colour and custom heading font.
+- The feature image shrinks to fit within the width of the written content, and doesn't grow wider than the original image.
+- The post's date and category are shown in the custom body font and in the highlighted version of the secondary blue colour.
+- The post's content uses the primary colour and custom headings font for headings, and black and the custom body font for body text.
+- This section is useful to users because it's where they'll find educational and informative content about quality investing. 
 
 #### Blog Post Premium Content
 
