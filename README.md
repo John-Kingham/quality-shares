@@ -370,9 +370,41 @@ This is user story #20. The plan was for users to be able to view all posts for 
 
 ## Project Management
 
+I managed the project using a somewhat simplified combination of [AgilePM](https://www.agilebusiness.org/agileprojectmanager.html) (previously known as DSDM) and [Scrum](https://www.scrum.org/).
+
+AgilePM has several phases that occur before the iterative development phase.
+
+### Pre-Project Phase
+
+In this phase, Jim asked me to build him a website and I said we should meet for a high level discussion to assess the project's feasibility.
+
+### Feasibility Phase
+
+In this phase, we discussed the high-level scope of the project (mostly in terms of epics) and its potential cost, and how that compared to Jim's overall budget. This information fed into the Strategy and Scope Planes. The project was technically and economically feasible, so we continued to the next phase.
+
+### Foundations Phase
+
+In this phase, we broke epics down into user stories. Almost all of the project's user stories were written at this stage, so I had a good understanding of the project's scope before launching the Scrum development phase. This phase mostly aligns with the Scope Plane, but also included work on both the Structure and Skeleton Planes.
+
+### Scrum Development Phase
+
+In this phase, I turned the requirements and structural/skeletal (e.g. wireframe) designs into working software across three sprints.
+
+For more information on each sprint and their associated user stories and tasks, please see the [GitHub Project](https://github.com/users/John-Kingham/projects/14/views/1).
+
 ### Sprint 1
 
-Goal - To deploy the first version of the site, with Blog Post editing and a Portfolio page.
+#### Sprint 1 Goal
+
+To deploy the first version of the site, with Blog Post editing and a Portfolio page.
+
+#### Sprint 1 User Stories
+
+- #1 Trustworthy look and feel (must-have)
+- #5 Read portfolio info (should-have)
+- #6 Contact the company offline (must-have)
+- #10 Manage blog posts (must-have)
+- #13 Manage portfolio info (should-have)
 
 ### Sprint 2
 
