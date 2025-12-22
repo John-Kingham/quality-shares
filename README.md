@@ -233,15 +233,23 @@ In the Skeleton Plane, I added fields to the data model tables that were most li
 
 [IMAGE OF POSTS BY CATEGORY SECTION]
 
-- The homepage contains a list of blog posts organised by category (e.g. Market Valuations, Company Reviews, Investment Strategy, etc). 
+- The homepage contains a list of blog posts grouped by category (e.g. Market Valuations, Company Reviews, Investment Strategy, etc). 
 - The category name and post titles are in the primary dark blue colour and use the site's custom headings font.
-- The background is plain white, so as not to distract from the content, which is the most important part of the site.
-- Each blog post's feature image, title and date are shown within a bordered "card" with rounded corners. The border is in a generic light grey colour which is not explicitly part of the site's colour palette. Each post's title links to the post's detail page. This design cleanly separates one post from another, while providing a minimalist, modern look and feel.
+- Each blog post's feature image, title and date are shown within a bordered "card" with rounded corners. The border is in a generic light grey colour which is not explicitly part of the site's colour palette. This design cleanly separates one post from another, while providing a minimalist, modern look and feel. 
+- Each post's title links to the post's detail page. As the title is a link, it provides visual feedback on hover by displaying an underline.
+- The post's date is in the site's custom body font and the darker "highlight" version of the secondary blue colour.
+- The section and "card" backgrounds are plain white, to avoid distracting users from the content, which is the most important part of the site.
 - This section is useful to users because it shows them the various content topics available on the site, and it helps them quickly find blog posts about a specific topic.
 
 #### Contact Details
 
+[IMAGE OF CONTACT DETAILS SECTION]
 
+- The footer of each page contains the company's contact details.
+- Contact details include the company's email, postal address and main social media links.
+- The footer contains a header, in the site's customer header font and in the site's primary dark blue colour.
+- The footer's body text uses the site's custom body font and is in standard black.
+- The social media icons are in the secondary medium blue colour and use the "highlight" version of the secondary colour on hover, to provide visual feedback. Each icon links to its respective social media platform.
 
 #### List of Posts (Post Archive)
 
