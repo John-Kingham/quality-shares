@@ -54,6 +54,10 @@ Tests for editing and deleting comments would have been ideal, but these were no
 |---|---|---|---|---|
 |Post title link|When clicked, the user is taken to the Post Detail page for that post|Clicked several links|As expected|None|
 
+### Post Detail - Content Section
+
+The Post Detail main content section has no interactive functionality to test.
+
 ### Post Detail - Premium Content Section
 
 |Feature|Expect|Action|Result|Image|
@@ -93,7 +97,7 @@ Tests for editing and deleting comments would have been ideal, but these were no
 
 ### Portfolio and About Sections
 
-There are no links within the Portfolio and About sections, other than those embedded within admin-created content.
+The Portfolio and About sections have no interactive functionality to test.
 
 ### Sign-up, Log-in and Log-out Sections
 
@@ -111,14 +115,37 @@ There are no links within the Portfolio and About sections, other than those emb
 |---|---|---|---|---|
 |404 error page|When an invalid path is entered, a helpful error page is shown|Entered an invalid path|As expected|![404 error page](/docs/images/testing/404-error-page.png)|
 |404 homepage button|When the "homepage" button is clicked, the user is sent to the homepage|Clicked the "homepage" button|As expected|None|
+|500 error page|When an internal server error occurs, a helpful error page is shown|Simulated an internal server error (in the development environment, as this is not appropriate for production)|As expected|![500 error page](/docs/images/testing/500-error-page.png)|
+|500 homepage button|When the "homepage" button is clicked, the user is sent to the homepage|Clicked the "homepage" button|As expected|None|
 
 ## Admin Site Functionality
 
+The admin site is a built-in part of Django, so I didn't test it as thoroughly as the parts I coded. However, I did run some basic tests to ensure the required functionality was there.
+
 ### Managing About information
+
+|Feature|Expect|Action|Result|Image|
+|---|---|---|---|---|
+|About fields|The About admin area has the correct fields|Checked the About fields|As expected|![About admin](/docs/images/testing/about-admin.png)|
+|About image|Local images can be uploaded, stored in Cloudinary and accessed from the front-end|Uploaded a local image, saved the About record and checked the About page|As expected|See above image|
+|About front-end|The About content and image are visible and correctly formatted on the front-end|Viewed the About page|As expected|![About front-end](/docs/images/testing/about-front-end.png)|
 
 ### Managing Portfolio information
 
+|Feature|Expect|Action|Result|Image|
+|---|---|---|---|---|
+|Portfolio fields|The Portfolio admin area has the correct fields|Checked the Portfolio fields|As expected|![Portfolio admin](/docs/images/testing/portfolio-admin.png)|
+|Portfolio image|Local images can be uploaded, stored in Cloudinary and accessed from the front-end|Uploaded a local image, saved the Portfolio record and checked the Portfolio page|As expected|See above image|
+|Portfolio front-end|The Portfolio content and image are visible and correctly formatted on the front-end|Viewed the Portfolio page|As expected|![Portfolio front-end](/docs/images/testing/portfolio-front-end.png)|
+
 ### Managing Posts
 
+|Feature|Expect|Action|Result|Image|
+|---|---|---|---|---|
+|Post fields|The Post admin area has the correct fields|Checked the Post fields|As expected|![Post admin](/docs/images/testing/post-admin.png)|
+|Post image|Local images can be uploaded, stored in Cloudinary and accessed from the front-end|Uploaded a local image, saved the Post record and checked the Post Detail page|As expected|See above image|
+|Post front-end|The Post content and image are visible and correctly formatted on the front-end|Viewed the Post Detail page|As expected|![Post front-end](/docs/images/testing/post-front-end.png)|
+
 ### Managing Comments
+
 
