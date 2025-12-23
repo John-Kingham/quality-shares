@@ -71,8 +71,18 @@ Tests for editing and deleting comments would have been ideal, but these were no
 |Sign-up button|When clicked, the user is taken to the sign-up page|Clicked sign-up button|As expected|None|
 |Log-in button|When clicked, the user is taken to the log-in page|Clicked log-in button|As expected|None|
 |Hide unapproved comments|When the user is logged out, unapproved comments are not visible|As a logged out user, viewed the comments section of a post with unapproved comments|As expected|![Hidden unapproved comment](/docs/images/testing/comments-hidden-unapproved.png)|
-|Show approved comments|When the user is logged out, approved comments are visible|View the comments section as a logged out user|As expected|![Visible approved comments](/docs/images/testing/comments-visible-approved.png)|
+|Show approved comments|When the user is logged out, approved comments are visible|As a logged out user, viewed the comments section of a post with approved comments|As expected|![Visible approved comments](/docs/images/testing/comments-visible-approved.png)|
 |Comment form|When the user is logged in, the sign-up/log-in request is replaced with a comment form|Viewed the comments section as a logged-in user|As expected|![Comments form](/docs/images/testing/comments-form.png)|
+|Create comment|When the user submits the comment form, an unapproved comment is created and shown below the form|Submitted the comment form with a new comment|As expected|*Before submitting* ![New comment - before](/docs/images/testing/comments-create-before.png) *After submitting* ![New comment - after](/docs/images/testing/comments-create-after.png)|
+|Create comment message|When the user submits the comment form, an "awaiting approval" message is shown|Submitted the comment form|As expected|![Awaiting approval message](/docs/images/testing/comments-create-message.png)|
+|Unapproved comments|When the user is logged in, they can see their unapproved comments with Edit and Delete buttons|Viewed unapproved comments as the logged-in comment author|As expected|![Visible unapproved comment](/docs/images/testing/comments-visible-unapproved.png)|
+|Editable comments|When the user is logged in, all of their comments have Edit and Delete buttons|Viewed comments as the logged-in comment author|As expected|![Editable comment](/docs/images/testing/comments-editable.png)|
+|Edit comment|When the edit button is clicked, the comment text is copied into the comment form and the comment form's button text changes to "Update"|Clicked the edit button for an unapproved comment|As expected|![Edit comment](/docs/images/testing/comments-edit-unapproved.png)|
+|Update approved comment|When the comment form is submitted to update an approved comment, the comment text is updated and its status is set to unapproved|Updated an approved comment via the comment form|As expected|![Edited comment](/docs/images/testing/comments-edited-comment.png)|
+|Edit comment message|When a comment is edited, an "awaiting approval" message is shown|Edited a comment|As expected|![Edited comment message](/docs/images/testing/comments-edited-comment-message.png)|
+|Delete comment|When the delete button is clicked, a confirmation modal is shown|Clicked the delete button|As expected|![Delete comment modal](/docs/images/testing/comments-delete-modal.png)|
+|Delete comment|When the Confirm Delete button is clicked, the comment is deleted|Clicked the Confirm Delete button|As expected|![Comment deleted](/docs/images/testing/comments-deleted-comment-gone.png)|
+|Deleted comment message|When the Confirm Delete button is clicked, a "comment deleted" message is shown|Clicked the Confirm Delete button|As expected|![Deleted comment message](/docs/images/testing/comments-deleted-comment-message.png)|
 
 ### Post List Section
 
