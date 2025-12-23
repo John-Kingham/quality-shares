@@ -55,16 +55,12 @@
           <!-- Comments -->
           {% for comment in comments %}
           {% if comment.approved or user == comment.author %}
-          <article class="py-3 rounded-3 {% if not comment.approved %}px-3 bg-light{% endif %} ">
-            <p class="post-meta">
-              {{ comment.author }} - {{ comment.created  | date:"M j, Y" }}
-            </p>
-            <p class="fw-bold fst-italic text-danger">
-              {% if not comment.approved %}This comment is waiting to be approved.{% endif %}
-            </p>
-            <div id="comment{{ comment.id }}">
-              {{ comment.content | linebreaks }}
-            </div>
+          <article class="my-3 py-3 rounded-3 {% if not comment.approved %}px-3 bg-light{% endif %} ">
+            <p class="post-meta">{{ comment.author }} - {{ comment.created  | date:"M j, Y" }}</p>
+            {% if not comment.approved %}
+            <p class="fw-bold fst-italic text-danger">This comment is waiting to be approved.</p>
+            {% endif %}
+            <div id="comment{{ comment.id }}">{{ comment.content | linebreaks }}</div>
             {% if user.is_authenticated and user == comment.author %}
             <button class="btn btn-primary qs-btn edit-btn" data-comment-id="{{ comment.id }}">Edit</button>
             <button class="btn btn-outline-primary qs-btn-outline delete-btn" data-comment-id="{{ comment.id }}">Delete</button>
