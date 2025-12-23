@@ -388,9 +388,11 @@ In this phase, we broke epics down into user stories. Almost all of the project'
 
 ### Scrum Development Phase
 
-In this phase, I turned the requirements and structural/skeletal (e.g. wireframe) designs into working software across three sprints.
+In this phase, I turned the requirements and structural/skeletal designs (e.g. wireframes) into working software across three sprints.
 
-For more information on each sprint and their associated user stories and tasks, please see the [GitHub Project](https://github.com/users/John-Kingham/projects/14/views/1).
+For each sprint, my goal was to allocate up to 60% of the sprint backlog to must-have items, and up to 20% each to should-have and could-have items. In practice, with such a small project with so few user stories, this was impossible, but that was still the goal.
+
+You can find more detail about each user story, including acceptance criteria and how I broke the stories down into individual tasks, in the related [GitHub Project](https://github.com/users/John-Kingham/projects/14/views/1).
 
 ### Sprint 1
 
@@ -408,11 +410,43 @@ To deploy the first version of the site, with Blog Post editing and a Portfolio 
 
 ### Sprint 2
 
-Goal - Add the Homepage and Blog Archive page.
+#### Sprint 2 Goal
+
+Add the Homepage and Blog Archive page.
+
+#### Sprint 2 User Stories
+
+- #2 Read blog posts (must-have)
+- #3 Read categorised posts (could-have)
+- #11 Categorise posts (could-have)
+- #15 Manage user chat (must-have)
 
 ### Sprint 3
 
-Goal - Add user comments, premium content and an about page.
+#### Sprint 3 Goal
+
+Add user comments, premium content and an about page.
+
+#### Sprint 3 User Stories
+
+- #4 Read about info (should-have)
+- #7 Chat with other users (must-have)
+- #9 Read premium content (could-have)
+- #12 Manage about info (should-have)
+- #17 Manage premium content (could-have)
+- #19 Helpful error pages (must-have)
+
+### Product Backlog
+
+By the project deadline, there were several could-have user stories still in the product backlog. This is a normal and expected part of agile software development.
+
+##### Product Backlog User Stories
+
+- #8 Get posts by email (could-have)
+- #14 Manage user enquiries (could-have)
+- #16 Manage email newsletters (could-have)
+- #18 Contact the company through the website (could-have)
+- #20 View all posts for a single category (could-have)
 
 ## Testing
 
