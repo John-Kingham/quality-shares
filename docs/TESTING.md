@@ -430,6 +430,18 @@ There were no errors or warnings.
 
 ### CSS Validation
 
+CSS validation was carried out using the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).
+
+#### style.css Validation
+
+![CSS validation errors](./images/testing/validation/css-validation-errors.png)
+
+There was one error relating to an empty `var()` function. To fix this, I removed the empty call and its CSS selector. 
+
+There were also three warnings about CSS variables not being statically checked. These warnings are unavoidable and do not need to be fixed.
+
+I revalidated the CSS and there were no errors and the same three unavoidable warnings.
+
 
 
 ### JavaScript Validation
