@@ -189,7 +189,9 @@ During the Structure Plane, I created a structural entitiy relationship diagram,
 
 In the Skeleton Plane, I added detail by adding fields to the data model tables that were most likely to be implemented. I also simplified the parts of the model that related to premium blog content, by removing the SubscriptionTier table and replacing it with a Premium Content field in the Post table.
 
-Note that the fields use generic data types like "string" and "date", as this diagram is still abstract and not implementation specific (i.e. not trying to represent any specific database type or ORM system).
+The fields use generic data types like string and date, as this diagram is still abstract and not implementation specific (i.e. not trying to represent any specific database type or ORM system).
+
+In the diagram, the Post table has category as a simple string type, but at the implementation stage I changed the design to have a separate Category table, with name and description fields and a one-to-many relationship from Category to Post.
 
 ![ERD detail diagram](/docs/images/erd/erd-skeleton.png)
 

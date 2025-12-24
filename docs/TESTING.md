@@ -122,7 +122,7 @@ The Portfolio and About sections have no interactive functionality to test.
 
 The admin site is a built-in part of Django, so I didn't test it as thoroughly as the parts I coded. However, I did run some basic tests to ensure the required functionality was there.
 
-### Managing About information
+### About Admin
 
 |Feature|Expect|Action|Result|Image|
 |---|---|---|---|---|
@@ -130,7 +130,7 @@ The admin site is a built-in part of Django, so I didn't test it as thoroughly a
 |About image|Local images can be uploaded, stored in Cloudinary and accessed from the front-end|Uploaded a local image, saved the About record and checked the About page|As expected|See above image|
 |About front-end|The About content and image are visible and correctly formatted on the front-end|Viewed the About page|As expected|![About front-end](/docs/images/testing/about-front-end.png)|
 
-### Managing Portfolio information
+### Portfolio Admin
 
 |Feature|Expect|Action|Result|Image|
 |---|---|---|---|---|
@@ -138,14 +138,26 @@ The admin site is a built-in part of Django, so I didn't test it as thoroughly a
 |Portfolio image|Local images can be uploaded, stored in Cloudinary and accessed from the front-end|Uploaded a local image, saved the Portfolio record and checked the Portfolio page|As expected|See above image|
 |Portfolio front-end|The Portfolio content and image are visible and correctly formatted on the front-end|Viewed the Portfolio page|As expected|![Portfolio front-end](/docs/images/testing/portfolio-front-end.png)|
 
-### Managing Posts
+### Post Admin
 
 |Feature|Expect|Action|Result|Image|
 |---|---|---|---|---|
 |Post fields|The Post admin area has the correct fields|Checked the Post fields|As expected|![Post admin](/docs/images/testing/post-admin.png)|
 |Post image|Local images can be uploaded, stored in Cloudinary and accessed from the front-end|Uploaded a local image, saved the Post record and checked the Post Detail page|As expected|See above image|
-|Post front-end|The Post content and image are visible and correctly formatted on the front-end|Viewed the Post Detail page|As expected|![Post front-end](/docs/images/testing/post-front-end.png)|
+|Post front-end|Post content and image are visible and correctly formatted on the front-end|Viewed the Post Detail page|As expected|![Post front-end](/docs/images/testing/post-front-end.png)|
 
-### Managing Comments
+### Comment Admin
 
+|Feature|Expect|Action|Result|Image|
+|---|---|---|---|---|
+|Comment fields|The comment admin area has the correct fields|Checked the comment fields|As expected|![Comment admin](/docs/images/testing/comment-admin.png)|
+|Comment editing|Comments can be CRUDed on the back-end|CRUDed a comment on the back-end|As expected|![Comment CRUD](/docs/images/testing/comment-admin-crud.png)|
+
+### Category Admin
+
+|Feature|Expect|Action|Result|Image|
+|---|---|---|---|---|
+|Category fields|The Category admin area has the correct fields|Checked the Category fields|As expected|![Category fields](/docs/images/testing/category-admin.png)|
+|Category editing|Categories can be CRUDed on the back-end|CRUDed a category on the back-end|As expected|![Category CRUD](/docs/images/testing/category-admin-crud.png)|
+|Category front-end|Changes to categories are visible on the front end|Updated a category and checked the front-end|As expected|![Category front-end](/docs/images/testing/category-front-end.png)|
 
