@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 /**
  * When the comment edit button is clicked, initialise the comment form for
  * editing.

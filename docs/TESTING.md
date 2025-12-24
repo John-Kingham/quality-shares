@@ -440,13 +440,25 @@ There was one error relating to an empty `var()` function. To fix this, I remove
 
 There were also three warnings about CSS variables not being statically checked. These warnings are unavoidable and do not need to be fixed.
 
-I revalidated the CSS and there were no errors and the same three unavoidable warnings.
+I revalidated the CSS and there were no errors.
 
-
+![CSS validation success](./images/testing/validation/css-validation-fixed.png)
 
 ### JavaScript Validation
 
+JavaScript validation was carried out using [JSHint](https://jshint.com/).
+
+#### comments.js
+
+![JS validation messages](./images/testing/validation/js-validation.png)
+
+There was one warning about `bootstrap` being an undefined variable. This is expected and is okay as the bootstrap JS is loaded by the HTML file before this custom JS file.
+
 ### Python Validation
+
+Python code was validated using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/).
+
+
 
 ## Lighthouse
 
