@@ -1,8 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-
 <!-- Portfolio content -->
-<section class="container p-3">
+<div class="container p-3">
   <article class="row justify-content-center">
     <div class="col-md-10 col-lg-8">
       <h2>{{ portfolio.title }}</h2>
@@ -14,6 +13,5 @@
       {{ portfolio.content | safe }}
     </div>
   </article>
-</section>
-
+</div>
 {% endblock content %}

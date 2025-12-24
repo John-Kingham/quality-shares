@@ -406,11 +406,17 @@ I re-validated the page and there were no errors or warnings.
 
 ![Archive HTML validation errors](./images/testing/validation/archive-html-validation-errors.png)
 
-There were two errors relating to an unclosed section element.
+There were two errors relating to an unclosed section element. The closing element was outside the `{% endblock content %}` statement, so I moved it inside.
 
+I re-validated the page and there were no errors or warnings.
 
+![Archive HTML validation fixed](./images/testing/validation/archive-html-validation-fixed.png)
 
 #### Portfolio HTML Validation
+
+![Portfolio HTML validation errors](./images/testing/validation/portfolio-html-validation-errors.png)
+
+There was one warning about a missing section heading. 
 
 #### About HTML Validation
 
