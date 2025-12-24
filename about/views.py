@@ -4,7 +4,7 @@ from .models import About
 
 def about_view(request):
     """
-    Returns a response for the About page.
+    Return a response for the About page.
 
     Args:
         request (HttpRequest): A GET request.

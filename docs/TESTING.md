@@ -458,6 +458,28 @@ There was one warning about `bootstrap` being an undefined variable. This is exp
 
 Python code was validated using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/).
 
+#### about/admin.py
+
+![About admin.py validation](./images/testing/validation/about-admin-py-validation.png)
+
+#### about/models.py
+
+![About models.py validation](./images/testing/validation/about-models-py-validation.png)
+
+#### about/test_views.py
+
+![About test_views.py validation](./images/testing/validation/about-test-views-py-validation.png)
+
+#### about/urls.py
+
+![About urls.py validation](./images/testing/validation/about-urls-py-validation.png)
+
+#### about/views.py
+
+![About views.py validation](./images/testing/validation/about-views-py-validation.png)
+
+#### portfolio ...
+
 
 
 ## Lighthouse
