@@ -209,7 +209,133 @@ This combination is used for unapproved comments. It only passes the AA Large te
 
 ## Responsiveness
 
+|Section|Mobile Responsive?|Tablet Responsive?|Desktop Responsive?|
+|---|---|---|---|
+|Header Nav|Yes|Yes|Yes|
+|Footer Contact Details|Yes|Yes|Yes|
+|Posts by Category|Yes|Yes|Yes|
+|Posts Archive|Yes|Yes|Yes|
+|Post Detail|Yes|Yes|Yes|
+|Premium Content|Yes|Yes|Yes|
+|Comments|Yes|Yes|Yes|
+|Portfolio|Yes|Yes|Yes|
+|About|Yes|Yes|Yes|
+|Error Pages|Yes|Yes|Yes|
+
 ### Responsiveness Screenshots
+
+<details>
+<summary>Home - Mobile</summary>
+
+![Home - Mobile](/docs/images/testing/responsiveness/home-mobile.png)
+
+</details>
+
+<details>
+<summary>Home - Tablet</summary>
+
+![Home - tablet](/docs/images/testing/responsiveness/home-tablet.png)
+
+</details>
+
+<details>
+<summary>Home - Desktop</summary>
+
+![Home - Desktop](/docs/images/testing/responsiveness/home-desktop.png)
+
+</details>
+
+<br>
+
+<details>
+<summary>Post Detail - Mobile</summary>
+
+![Post Detail - Mobile](/docs/images/testing/responsiveness/post-detail-mobile.png)
+
+</details>
+
+<details>
+<summary>Post Detail - Tablet</summary>
+
+![Post Detail - tablet](/docs/images/testing/responsiveness/post-detail-tablet.png)
+
+</details>
+
+<details>
+<summary>Post Detail - Desktop</summary>
+
+![Post Detail - Desktop](/docs/images/testing/responsiveness/post-detail-desktop.png)
+
+</details>
+
+<br>
+
+<details>
+<summary>Archive - Mobile</summary>
+
+![Archive - Mobile](/docs/images/testing/responsiveness/archive-mobile.png)
+
+</details>
+
+<details>
+<summary>Archive - Tablet</summary>
+
+![Archive - tablet](/docs/images/testing/responsiveness/archive-tablet.png)
+
+</details>
+
+<details>
+<summary>Archive - Desktop</summary>
+
+![Archive - Desktop](/docs/images/testing/responsiveness/archive-desktop.png)
+
+</details>
+
+<br>
+
+<details>
+<summary>Portfolio - Mobile</summary>
+
+![Portfolio - Mobile](/docs/images/testing/responsiveness/portfolio-mobile.png)
+
+</details>
+
+<details>
+<summary>Portfolio - Tablet</summary>
+
+![Portfolio - tablet](/docs/images/testing/responsiveness/portfolio-tablet.png)
+
+</details>
+
+<details>
+<summary>Portfolio - Desktop</summary>
+
+![Portfolio - Desktop](/docs/images/testing/responsiveness/portfolio-desktop.png)
+
+</details>
+
+<br>
+
+<details>
+<summary>About - Mobile</summary>
+
+![About - Mobile](/docs/images/testing/responsiveness/about-mobile.png)
+
+</details>
+
+<details>
+<summary>About - Tablet</summary>
+
+![About - tablet](/docs/images/testing/responsiveness/about-tablet.png)
+
+</details>
+
+<details>
+<summary>About - Desktop</summary>
+
+![About - Desktop](/docs/images/testing/responsiveness/about-desktop.png)
+
+</details>
 
 ## Browsers
 

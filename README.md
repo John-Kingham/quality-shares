@@ -235,7 +235,8 @@ In the diagram, the Post table has category as a simple string type, but at the 
 - This section contains the site's logo and title in the primary dark blue colour. The site title has a large font size and uses the site's custom headings font.
 - This section also contains sign-up and log-in buttons. The sign-up button is solid and uses the secondary blue as its background colour and white as a high-contrast text colour. The button's colour changes on hover to provide visual feedback. The log-in button has a white background and uses the secondary blue colour for text. On hover, this button's background switches to the tertiary blue colour to give the user visual feedback. Identical sign-up and log-in buttons are used across the site.
 - When the user is logged in, the sign-up and log-in buttons are replaced by a log-out button, which uses the same styling as the log-in button.
-- This section also displays messages to users, providing additional feedback for certain activities. These include logging in and logging out, as well as creating, deleting and updating comments.
+- This section also contains a navigation bar, with links to the site's top-level pages (Home, Archive, Portfolio, About).
+- This section displays messages to users, providing additional feedback for certain activities. These include logging in and logging out, as well as creating, deleting and updating comments.
 - This section is useful to users for many reasons. It provides a consistent look-and-feel at the start of each page, it enables users to easily navigate around the site, it enables users to log in and out, and it gives helpful feedback in the form of pop-up messages.
 
 #### Posts by Category
