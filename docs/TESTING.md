@@ -384,7 +384,7 @@ There were four errors relating to unnecessary ARIA roles. I fixed these warning
 
 There was one error relating to an unnecessary closing `li` tag. I fixed this error by removing the offending tag.
 
-I re-validated the page and there were no errors or warnings.
+I revalidated the page and there were no errors or warnings.
 
 ![Homepage HTML validation fixed results](./images/testing/validation/home-html-validation-fixed.png)
 
@@ -398,7 +398,7 @@ There was one warning about an article without a heading. This was a comment. To
 
 There was one error about the use of aria-labelledby on a plain div. I fixed this by giving the div a role of `dialog`.
 
-I re-validated the page and there were no errors or warnings.
+I revalidated the page and there were no errors or warnings.
 
 ![Post Detail HTML validation fixed](./images/testing/validation/post-detail-html-validation-fixed.png)
 
@@ -408,7 +408,7 @@ I re-validated the page and there were no errors or warnings.
 
 There were two errors relating to an unclosed section element. The closing element was outside the `{% endblock content %}` statement, so I moved it inside.
 
-I re-validated the page and there were no errors or warnings.
+I revalidated the page and there were no errors or warnings.
 
 ![Archive HTML validation fixed](./images/testing/validation/archive-html-validation-fixed.png)
 
@@ -416,11 +416,21 @@ I re-validated the page and there were no errors or warnings.
 
 ![Portfolio HTML validation errors](./images/testing/validation/portfolio-html-validation-errors.png)
 
-There was one warning about a missing section heading. 
+There was one warning about a missing section heading. I fixed this by changing the section to a div. I thought the about page would have the same defect, which it did, so I applied the same fix to the about page.
+
+I revalidated the page and there were no errors or warnings.
+
+![Portfolio HTML validation fixed](./images/testing/validation/portfolio-html-validation-fixed.png)
 
 #### About HTML Validation
 
+![About HTML validation success](./images/testing/validation/about-html-validation.png)
+
+There were no errors or warnings.
+
 ### CSS Validation
+
+
 
 ### JavaScript Validation
 
