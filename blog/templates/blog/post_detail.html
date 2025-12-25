@@ -15,6 +15,7 @@
       {% endif %}
       <p class="post-meta">{{ post.updated | date:"M j, Y" }} - {{ post.category.name }}</p>
       {{ post.content | safe }}
+      {% if post.premium_content %}
       {% if user.is_authenticated %}
       {{ post.premium_content | safe }}
       {% else %}
@@ -27,6 +28,7 @@
           <a class="btn btn-outline-primary qs-btn-outline" href="{{ login_url }}">Log in</a>
         </div>
       </div>
+      {% endif %}
       {% endif %}
     </div>
   </article>
