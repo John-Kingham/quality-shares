@@ -551,3 +551,4 @@ Python code was validated using the [Code Institute Python Linter](https://pep8c
 
 ## Unfixed Bugs
 
+There are no unfixed bugs that I am aware of. Having said that, even after thorough testing I cannot completely rule out the possibility of some hidden bugs.
