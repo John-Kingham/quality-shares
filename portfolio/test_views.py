@@ -19,7 +19,7 @@ class TestPortfolioView(TestCase):
         self.response = self.client.get(reverse("portfolio"))
 
     def test_portfolio_page(self):
-        """That that the Portfolio page contains the correct information."""
+        """Test that the Portfolio page contains the correct information."""
         self.assertEqual(self.response.status_code, HTTPStatus.OK)
         self.assertContains(self.response, self.title)
         self.assertContains(self.response, self.image_caption)

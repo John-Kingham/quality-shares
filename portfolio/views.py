@@ -4,7 +4,7 @@ from .models import Portfolio
 
 def portfolio_view(request):
     """
-    Returns a response for the Portfolio page.
+    Return a response for the Portfolio page.
 
     Args:
         request (HttpRequest): A GET request.

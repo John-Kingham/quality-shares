@@ -478,9 +478,61 @@ Python code was validated using the [Code Institute Python Linter](https://pep8c
 
 ![About views.py validation](./images/testing/validation/about-views-py-validation.png)
 
-#### portfolio ...
+#### blog/admin.py
 
+![Blog admin.py validation](./images/testing/validation/blog-admin-py-validation.png)
 
+#### blog/forms.py
+
+![Blog forms.py validation](./images/testing/validation/blog-forms-py-validation.png)
+
+#### blog/models.py
+
+![Blog models.py validation](./images/testing/validation/blog-models-py-validation.png)
+
+#### blog/test_views.py
+
+![Blog test_views.py validation](./images/testing/validation/blog-test-views-py-validation.png)
+
+#### blog/urls.py
+
+![Blog urls.py validation](./images/testing/validation/blog-urls-py-validation.png)
+
+#### blog/views.py
+
+![Blog views.py validation](./images/testing/validation/blog-views-py-validation.png)
+
+#### portfolio/admin.py
+
+![Portfolio admin.py validation](./images/testing/validation/portfolio-admin-py-validation.png)
+
+#### portfolio/models.py
+
+![Portfolio models.py validation](./images/testing/validation/portfolio-models-py-validation.png)
+
+#### portfolio/test_views.py
+
+![Portfolio test_views.py validation](./images/testing/validation/portfolio-test-views-py-validation.png)
+
+#### portfolio/urls.py
+
+![Portfolio urls.py validation](./images/testing/validation/portfolio-urls-py-validation.png)
+
+#### portfolio/views.py
+
+![Portfolio views.py validation](./images/testing/validation/portfolio-views-py-validation.png)
+
+#### quality_shares/settings.py
+
+![quality_shares settings.py validation](./images/testing/validation/quality-shares-settings-py-validation.png)
+
+#### quality_shares/urls.py
+
+![quality_shares urls.py validation](./images/testing/validation/quality-shares-urls-py-validation.png)
+
+#### quality_shares/views.py
+
+![quality_shares views.py validation](./images/testing/validation/quality-shares-views-py-validation.png)
 
 ## Lighthouse
 
