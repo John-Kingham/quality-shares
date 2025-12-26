@@ -11,7 +11,7 @@ Jim was looking for a challenge and wanted to start his own business to leverage
 
 Jim already has a Substack where he publishes free weekly articles to build up his audience. He wanted to move from Substack to a bespoke website to give him (a) more control over the platform’s structure, and (b) more flexibility with potential future product offerings, such as books, courses, coaching, etc.
 
-[IMAGE SHOWING THE SITE'S RESPONSIVENESS]
+![Responsive on multiple screen sizes](./docs/images/features/responsive-multi-screen.png)
 
 ## Table of Contents
 
@@ -229,7 +229,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### Header Navigation
 
-[IMAGE OF HEADER NAV]
+![Header navigation feature](./docs/images/features/header-nav.png)
 
 - Each page contains a header navigation section.
 - This section contains the site's logo and title in the primary dark blue colour. The site title has a large font size and uses the site's custom headings font.
@@ -241,7 +241,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### Posts by Category
 
-[IMAGE OF POSTS BY CATEGORY SECTION]
+![Posts by category feature](./docs/images/features/posts-by-category.png)
 
 - The homepage contains a list of blog posts grouped by category (e.g. Market Valuations, Company Reviews, Investment Strategy, etc). 
 - The category name and post titles are in the primary dark blue colour and use the site's custom headings font.
@@ -253,7 +253,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### Contact Details
 
-[IMAGE OF CONTACT DETAILS SECTION]
+![Contact details feature](./docs/images/features/contact-details.png)
 
 - The footer of each page contains the company's contact details.
 - Contact details include the company's email, postal address and main social media links.
@@ -264,7 +264,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### List of Posts (Post Archive)
 
-[IMAGE OF POST ARCHIVE SECTION]
+![List of posts feature](./docs/images/features/post-archive.png)
 
 - The Archive page contains a page heading and a list of all blog posts, sorted by creation date in descending order (newest to oldest).
 - As with other sections, this section's headings and post titles use the site's custom heading font and the primary dark blue colour. 
@@ -274,7 +274,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### Blog Post Detail
 
-[IMAGE OF POST DETAIL SECTION]
+![Post detail feature](./docs/images/features/post-detail.png)
 
 - Clicking on a blog post title on either the List of Posts section or the Posts by Category section takes the user to a detail page for that post.
 - This section shows the post's title, feature image, updated date, category and free content. Premium content and comments are shown on the same page, but these are separate sections and I explain them in more detail below.
@@ -286,7 +286,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### Blog Post Premium Content
 
-[IMAGE OF PREMIUM CONTENT SIGN-UP MESSAGE]
+![Premium content feature](./docs/images/features/premium-content.png)
 
 - Users must sign up or log in to read premium content.
 - If a post contains premium content and the user isn't logged in, they are shown a panel asking them to sign up or log in.
@@ -298,7 +298,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### Blog Post Comments
 
-[IMAGE OF COMMENT PANEL]
+![Comments feature](./docs/images/features/comments.png)
 
 - Users must sign up or log in to submit comments.
 - This section contains a request for users to sign up or log in, and a list of comments. Exactly what the user sees will depend upon their logged-in/out status and the approval status of each comment.
@@ -314,7 +314,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### Sign up
 
-[IMAGE OF THE SIGN-UP SECTION]
+![Sign up feature](./docs/images/features/sign-up.png)
 
 - This section enables users to sign up to view premium content and post comments. Users can reach this section by clicking on any of the site's Sign-up buttons.
 - This section contains a heading (which uses the site-wide standard heading colour and font) and a sign-up form and button.
@@ -325,7 +325,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### Log in
 
-[IMAGE OF THE LOG-IN SECTION]
+![Log in feature](./docs/images/features/log-in.png)
 
 - This section is where signed-up users can log-in to view premium content and post comments. Users can reach this section by clicking on any of the site's Log-in buttons.
 - This section contains a heading (which uses the site-wide standard heading colour and font) and a log-in form and button.
@@ -335,7 +335,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### Log out
 
-[IMAGE OF THE LOG-OUT SECTION]
+![Log out feature](./docs/images/features/log-out.png)
 
 - This section is where logged-in users can log out.
 - This section contains a heading (which uses the site-wide standard heading colour and font), some body text and a log-out button.
@@ -344,7 +344,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### Portfolio Information
 
-[IMAGE OF PORTFOLIO SECTION]
+![Portfolio feature](./docs/images/features/portfolio.png)
 
 - This section contains information about Jim's model investment portfolio.
 - It includes a title (using the site-wide standard heading colour and font), a feature image (and caption) and relevant written content.
@@ -354,7 +354,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 
 #### About Information
 
-[IMAGE OF ABOUT SECTION]
+![About feature](./docs/images/features/about.png)
 
 - This section contains information about Jim.
 - It includes a title (using the site-wide standard heading colour and font), a feature image (and caption) and relevant written content.
@@ -363,8 +363,14 @@ In the diagram, the Post table has category as a simple string type, but at the 
 - This section is useful to users as they can learn more about the person (or people) behind the site, which may help them develop an opinion about whether the site's content is worth reading or not (and perhaps whether future products are worth purchasing).
 
 #### Error Pages
+|Error code|Feature|
+|---|---|
+|404|![404 error notice](./docs/images/features/error-404.png)|
+|500|![500 error notice](./docs/images/features/error-500.png)|
 
-[TO DO]
+- The 404 error section is shown if the user enters an invalid URL, while the 500 error section is shown if there is an internal server error.
+- These sections contain a simple error message and a button to return to the homepage.
+- These sections are useful to users because they tell users when they've visited an invalid URL, and give users an easy way to get back to the homepage, while retaining the same style as the rest of the site.
 
 ### Future Features
 
