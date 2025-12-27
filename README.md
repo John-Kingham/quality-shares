@@ -142,15 +142,30 @@ I used wireframes to add detail to the webpage structures outlined above. These 
 
 #### Mobile Wireframes
 
+<details>
+<summary>Mobile Wireframes</summary>
+
 ![Wireframes for mobile](./docs/images/wireframes/wireframes-mobile.png)
+
+</details>
 
 #### Tablet Wireframes
 
+<details>
+<summary>Tablet Wireframes</summary>
+
 ![Wireframes for tablet](./docs/images/wireframes/wireframes-tablet.png)
+
+</details>
 
 #### Desktop Wireframes
 
+<details>
+<summary>Desktop Wireframes</summary>
+
 ![Wireframes for desktop](./docs/images/wireframes/wireframes-desktop.png)
+
+</details>
 
 ### Surface Plane
 
@@ -204,6 +219,23 @@ In the diagram, the Post table has category as a simple string type, but at the 
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Python](https://www.python.org/)
 
+### Frameworks & Libraries
+
+- [Django](https://www.djangoproject.com/)
+- [Bootstrap](https://getbootstrap.com/)
+
+### Database
+
+- [PostgreSQL](https://www.postgresql.org/) (a PostgreSQL database was supplied for the project by Code Institute)
+
+### External Storage
+
+- [Cloudinary](https://cloudinary.com/)
+
+### Hosting
+
+- [Heroku](https://www.heroku.com/)
+
 ### Installed Python Libraries
 
 - [cloudinary](https://pypi.org/project/cloudinary/) (Python and Django SDK for Cloudinary)
@@ -219,9 +251,6 @@ In the diagram, the Post table has category as a simple string type, but at the 
 - [urllib3](https://pypi.org/project/urllib3/) (HTTP library with thread-safe connection pooling, file post, and more)
 - [whitenoise](https://pypi.org/project/whitenoise/) (Radically simplified static file serving for WSGI applications)
 - Required dependencies for the above libraries
-
-### Other Technologies
-- [PostgreSQL](https://www.postgresql.org/) (a PostgreSQL database was supplied for the project by Code Institute)
 
 ## Features
 
@@ -537,7 +566,7 @@ To run the site locally, you will need to install the required libraries and set
 
 ### Deployment to Heroku
 
-The site can be deployed to the Internet using Heroku by following these steps (which assume you have a working PostgreSQL database and Cloudinary account):
+If you have a working PostgreSQL database and Cloudinary account, the site can be deployed to the Internet using Heroku by following these steps:
 
 1. Fork or clone this repository using the instructions above.
 1. If you cloned this repository, push your clone up to a remote repo on your GitHub account.
@@ -554,3 +583,77 @@ The site can be deployed to the Internet using Heroku by following these steps (
 These steps require knowledge of Heroku that is beyond the scope of this document. If you need additional information to set up your Heroku deployment, you should read the official [Heroku documentation](https://devcenter.heroku.com/).
 
 ## Credits
+
+### Project Management
+
+- I managed the overall project using a simplified combination of [AgilePM](https://www.agilebusiness.org/) and [Scrum](https://www.scrum.org/).
+- I organised the design phase using the 5-Planes/Phases method, as detailed in [The Elements of User Experience](https://uk.bookshop.org/p/books/elements-of-user-experience-the-user-centered-design-for-the-web-and-beyond-jesse-james-garrett/e232e0c9869653bd?ean=9780321683687&next=t&next=t).
+- I managed the construction phase using [Scrum](https://www.scrum.org/).
+
+### Strategy Phase
+
+- I used [Google Docs](https://docs.google.com/) to record business and user goals.
+
+### Scope Phase
+
+- I used [Google Docs](https://docs.google.com/) to record epics and [GitHub Projects](https://github.com/users/John-Kingham/projects/14) to record user stories and tasks.
+
+### Structure Phase
+
+- I used [Mermaid Chart](https://www.mermaidchart.com/) to create high-level structure diagrams for database tables and the user interface.
+
+### Skeleton Phase
+
+- I used [Mermaid Chart](https://www.mermaidchart.com/) to create detailed entity relationship diagrams for the database.
+- I used [Balsamiq](https://balsamiq.com/) to create wireframes for the user interface.
+- I used a [Substack](https://substack.com/) called [The Wary One](https://www.thewaryone.com/) as inspiration for the general layout of each page (as reflected in the wireframes).
+
+### Surface Phase
+
+#### Colour Palette
+
+- I used the colour palette of [Hargreaves Lansdown](https://www.hl.co.uk/) as inspiration for the Quality Shares colour palette.
+- I used the default [Bootstrap](https://getbootstrap.com/) colours for some elements, including light-grey backgrounds and Django message colours.
+
+#### Images
+
+- I used the following free images from [UnSplash](https://unsplash.com/):
+  - [About image](https://unsplash.com/photos/mens-blue-and-white-button-up-collared-top-DItYlc26zVI)
+  - [Placeholder image](https://unsplash.com/photos/a-bank-sign-in-front-of-a-building-Wf1opKy4iaI)
+  - [SP500 image](https://unsplash.com/photos/a-close-up-of-a-clock-with-different-colored-numbers-lmV3gJSAgbo)
+  - [Stock price image](https://unsplash.com/photos/a-person-holding-a-cell-phone-in-front-of-a-stock-chart-K5mPtONmpHM)
+  - [Investor laptop image](https://unsplash.com/photos/turned-on-macbook-pro-DfjJMVhwH_8)
+  - [Investor laptop image 2](https://unsplash.com/photos/black-and-silver-laptop-computer-mcAUHlGirVs)
+  - [Investor mobile image](https://unsplash.com/photos/a-remote-control-sitting-on-top-of-a-table-ip7GFn5JqX8)
+  - [Candlestick chart image](https://unsplash.com/photos/black-flat-screen-computer-monitor-N__BnvQ_w18)
+  - [Candlestick chart image 2](https://unsplash.com/photos/red-and-blue-light-streaks-fiXLQXAhCfk)
+
+#### Favicons
+
+- I used [Gauger.io](https://gauger.io/fonticon/) to create a favicon image using its "atom" icon.
+- I used [Favicon.io](https://favicon.io/) to convert the favicon into multiple favicon formats.
+
+#### Fonts
+
+- I used custom fonts from [Google Fonts](https://fonts.google.com/). The exact fonts are listed at the top of this readme.
+
+#### Content
+
+- I used [Microsoft Co-Pilot](https://copilot.microsoft.com/) to generate most of the site's text content.
+
+### Scrum Development Phase
+
+- I used [Visual Studio Code](https://code.visualstudio.com/) as the development environment.
+- I mostly used [Ecosia Search](https://www.ecosia.org/), [W3Schools](https://www.w3schools.com/), [Code Institute](https://codeinstitute.net/), [MDN](https://developer.mozilla.org/) and [Microsoft Copilot](https://copilot.microsoft.com/) for general research.
+- I read parts of [The Epic Guide to Agile](https://www.davetodarobooks.com/) for additional information about Scrum.
+- Although I used various information sources to support the development of this project, no non-trivial code was copy/pasted into the project.
+
+### Documentation
+
+- I used [Code Institute's README.md template](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md) as the starting point for this document.
+- I used [Am I Responsive](https://ui.dev/amiresponsive) to generate the multi-screen image shown at the start of the README.
+- I used [Green Shot](https://getgreenshot.org/) to add text and arrows to some screenshots.
+
+## People
+
+- I would like to thank my Code Institute mentor, [Simen Daehlin](https://github.com/Eventyret).
