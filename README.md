@@ -596,25 +596,25 @@ These steps require knowledge of Heroku that is beyond the scope of this documen
 - I organised the design phase using the 5-Planes/Phases method, as detailed in [The Elements of User Experience](https://uk.bookshop.org/p/books/elements-of-user-experience-the-user-centered-design-for-the-web-and-beyond-jesse-james-garrett/e232e0c9869653bd?ean=9780321683687&next=t&next=t).
 - I managed the construction phase using [Scrum](https://www.scrum.org/).
 
-### Strategy Phase
+### Strategy Plane
 
 - I used [Google Docs](https://docs.google.com/) to record business and user goals.
 
-### Scope Phase
+### Scope Plane
 
 - I used [Google Docs](https://docs.google.com/) to record epics and [GitHub Projects](https://github.com/users/John-Kingham/projects/14) to record user stories and tasks.
 
-### Structure Phase
+### Structure Plane
 
 - I used [Mermaid Chart](https://www.mermaidchart.com/) to create high-level structure diagrams for database tables and the user interface.
 
-### Skeleton Phase
+### Skeleton Plane
 
 - I used [Mermaid Chart](https://www.mermaidchart.com/) to create detailed entity relationship diagrams for the database.
 - I used [Balsamiq](https://balsamiq.com/) to create wireframes for the user interface.
 - I used a [Substack](https://substack.com/) called [The Wary One](https://www.thewaryone.com/) as inspiration for the general layout of each page (as reflected in the wireframes).
 
-### Surface Phase
+### Surface Plane
 
 #### Colour Palette
 
