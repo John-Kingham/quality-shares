@@ -164,7 +164,7 @@ The admin site is a built-in part of Django, so I didn't test it as thoroughly a
 
 ## Colour Contrast
 
-I tested colour contrasts using [colourcontrast.cc](https://colourcontrast.cc/) as the [WebAIM](https://webaim.org/) site was down.
+I tested colour contrasts using [colourcontrast.cc](https://colourcontrast.cc/) because the [WebAIM](https://webaim.org/) site was down.
 
 ### White + Primary
 
@@ -186,7 +186,7 @@ This combination is used for the header navigation bar, footer text, outline but
 
 ### Tertiary Highlight + Primary
 
-This combination is used in the header navigation bar on hover and it passes all tests.
+This combination is used in the header navigation bar on hover. It passes all tests.
 
 ![Tertiary-highlight/primary contrast](./images/testing/contrast/tertiary-highlight-primary.png)
 
@@ -198,13 +198,13 @@ This combination is used in the premium content info panel and for unapproved co
 
 ### Bootstrap Light + Bootstrap Body Color
 
-This combination is used for unapproved comments and it passes all tests.
+This combination is used for unapproved comments. It passes all tests.
 
 ![BS Light/BS Body](./images/testing/contrast/bs-light-bs-body-color.png)
 
 ### Bootstrap Light + Bootstrap Danger
 
-This combination is used for unapproved comments. It only passes the AA Large test, but as this combination is only used with bold test, this is acceptable.
+This combination is used for unapproved comments. It only passes the AA Large test, but as this combination is only used with bold text, this is acceptable.
 
 ![BS Light/BS Danger](./images/testing/contrast/bs-light-bs-danger.png)
 

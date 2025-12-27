@@ -7,7 +7,7 @@ Quality Shares is an informative and educational website for "quality investors"
 
 I built the site for Jim Smith, a (fictional) financial analyst with 20 years’ experience. 
 
-Jim was looking for a challenge and wanted to start his own business to leverage his extensive knowledge as an investor and analyst. He likes writing, so he wanted to launch a paid blog/newsletter business.
+Jim was seeking a challenge and wanted to start his own business, leveraging his extensive knowledge as an investor and analyst. He likes writing, so he wanted to launch a paid blog/newsletter business.
 
 Jim already has a Substack where he publishes free weekly articles to build up his audience. He wanted to move from Substack to a bespoke website to give him (a) more control over the platform’s structure, and (b) more flexibility with potential future product offerings, such as books, courses, coaching, etc.
 
@@ -30,7 +30,7 @@ I designed the site using the "five planes" UX design process.
 
 ### Strategy Plane
 
-The strategy plane is centered around discovering the product owner's and users' goals.
+The strategy plane is centred around discovering the product owner’s and users’ goals.
 
 #### Product Owner Goals
 
@@ -54,20 +54,20 @@ The strategy plane is centered around discovering the product owner's and users'
 
 ### Scope Plane
 
-The scope plane is obviously all about defining the scope of the project; what is in scope and what is out of scope. 
+The scope plane is primarily concerned with defining the project's scope, including what is in scope and what is out of scope.
 
 #### Epics
 
-There were several high level requirements (or epics) that Jim wanted:
+There were several high-level requirements (or epics) that Jim wanted:
 
 - Blog:
-  - A Substack-like blog where Jim can publish content and build trust with users, and where users can find useful information to read. The blog should also allow user to interact, via comments or a chat system, to build more trust.
+  - A Substack-like blog where Jim can publish content and build trust with users, and where users can find useful information to read. The blog should also allow users to interact, via comments or a chat system, to build more trust.
 - Info pages:
-  - Pages or sections on the site, with information about Jim, about his investment strategy or portfolio, and about how to contact him. These should build further trust, which Jim hopes to turn into revenues in the future.
+  - Pages or sections on the site providing information about Jim, his investment strategy or portfolio, and how to contact him. These should build further trust, which Jim hopes will generate revenue in the future.
 - User sign-up:
   - A way for users to sign up to get e-mail newsletters and other premium content, which Jim intends to monetise at a later stage.
 
-I broke the above epics down into user stories to add detail to the scope of the project. As the project had a fixed deadline, I prioritised user stories using the MoSCoW method, so I could focus my efforts on the highest-priority must-have and should-have items. 
+I broke the above epics down into user stories to add detail to the project's scope. As the project had a fixed deadline, I prioritised user stories using the MoSCoW method, so I could focus my efforts on the highest-priority must-have and should-have items. 
 
 The user stories are listed below, grouped by their related epic.
 
@@ -206,7 +206,7 @@ In the Skeleton Plane, I added detail by adding fields to the data model tables 
 
 The fields use generic data types like string and date, as this diagram is still abstract and not implementation specific (i.e. not trying to represent any specific database type or ORM system).
 
-In the diagram, the Post table has category as a simple string type, but at the implementation stage I changed the design to have a separate Category table, with name and description fields and a one-to-many relationship from Category to Post.
+In the diagram, the Post table has the category field as a simple string type, but at the implementation stage I changed the design to have a separate Category table, with name and description fields and a one-to-many relationship from Category to Post.
 
 ![ERD detail diagram](./docs/images/erd/erd-skeleton.png)
 
@@ -244,7 +244,7 @@ In the diagram, the Post table has category as a simple string type, but at the 
 - [django-allauth](https://pypi.org/project/django-allauth/) (Django authentication, registration, account management, social account authentication)
 - [django-crispy-forms](https://pypi.org/project/django-crispy-forms/) (Best way to have Django DRY forms)
 - [django-summernote](https://pypi.org/project/django-summernote/) (Summernote plugin for Django)
-- [dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) (Django package that provides Cloudinary storages for media and static files as well as management commands for removing unnecessary files)
+- [dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/) (Django package that provides Cloudinary storage for media and static files as well as management commands for removing unnecessary files)
 - [dj-database-url](https://pypi.org/project/dj-database-url/) (Use Database URLs in your Django Application)
 - [gunicorn](https://pypi.org/project/gunicorn/) (WSGI HTTP Server for UNIX)
 - [psycopg2](https://pypi.org/project/psycopg2/) (Python-PostgreSQL Database Adapter)
@@ -417,7 +417,7 @@ This is user story #14 and #18. This is effectively a contact form that users ca
 
 This is user story #20. The plan was for users to be able to view all posts for one category by clicking on the category of a single post, or via links on the homepage or a category dropdown selector on the Post Archive page. This should be technically simple and could easily be implemented in a future release.
 
-#### Separate development and production databases
+#### Separate Development and Production Databases
 
 This isn't recorded as a user story, but the site currently uses the same database in its development and production environments. Best practice is to use separate databases, and this would be a high-priority feature for a future release.
 
@@ -429,7 +429,7 @@ AgilePM has several phases that occur before the iterative development phase.
 
 ### Pre-Project Phase
 
-In this phase, Jim asked me to build him a website and I said we should meet for a high level discussion to assess the project's feasibility.
+In this phase, Jim (the fictional product owner) asked me to build him a website, so we met for a high level discussion to assess the project's feasibility.
 
 ### Feasibility Phase
 
@@ -437,7 +437,7 @@ In this phase, we discussed the high-level scope of the project (mostly in terms
 
 ### Foundations Phase
 
-In this phase, we broke epics down into user stories. Almost all of the project's user stories were written at this stage, so I had a good understanding of the project's scope before launching the Scrum development phase. This phase mostly aligns with the Scope Plane, but also included work on both the Structure and Skeleton Planes.
+In this phase, we broke epics down into user stories. Almost all of the project's user stories were written by the end of this stage, so I had a good understanding of the project's scope before launching the Scrum development phase. This phase mostly aligns with the Scope Plane, but it also includes work on both the Structure and Skeleton Planes.
 
 ### Scrum Development Phase
 
@@ -448,6 +448,8 @@ For each sprint, my goal was to allocate up to 60% of the sprint backlog to must
 You can find more detail about each user story, including acceptance criteria and how I broke the stories down into individual tasks, in the related [GitHub Project](https://github.com/users/John-Kingham/projects/14/views/1).
 
 ### Sprint 1
+
+![Sprint 1 backlog](./docs/images/github-project/github-project-sprint-1.png)
 
 #### Sprint 1 Goal
 
@@ -463,6 +465,8 @@ To deploy the first version of the site, with Blog Post editing and a Portfolio 
 
 ### Sprint 2
 
+![Sprint 2 backlog](./docs/images/github-project/github-project-sprint-2.png)
+
 #### Sprint 2 Goal
 
 Add the Homepage and Blog Archive page.
@@ -475,6 +479,8 @@ Add the Homepage and Blog Archive page.
 - #15 Manage user chat (must-have)
 
 ### Sprint 3
+
+![Sprint 3 backlog](./docs/images/github-project/github-project-sprint-3.png)
 
 #### Sprint 3 Goal
 
@@ -493,7 +499,7 @@ Add user comments, premium content and an about page.
 
 By the project deadline, there were several could-have user stories still in the product backlog. This is a normal and expected part of agile software development.
 
-##### Product Backlog User Stories
+##### Unfinished User Stories in the Product Backlog
 
 - #8 Get posts by email (could-have)
 - #14 Manage user enquiries (could-have)
@@ -503,7 +509,7 @@ By the project deadline, there were several could-have user stories still in the
 
 ## Testing
 
-The website was thoroughly tests, with all tests documented in [TESTING.md](./docs/TESTING.md).
+The website was thoroughly tested, with all tests documented in [TESTING.md](./docs/TESTING.md).
 
 ## Deployment
 
@@ -524,7 +530,7 @@ You can clone the repository using these steps:
 
 ### Forking
 
-By forking the GitHub repository, you make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository. You can fork this repository using the following steps:
+By forking the GitHub repository, you can make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository. You can fork this repository using the following steps:
 
 1. Log in to GitHub and go to the [GitHub repository](https://github.com/John-Kingham/quality_shares).
 2. Find the Fork button at the top of the page and click it.
@@ -532,7 +538,7 @@ By forking the GitHub repository, you make a copy of the original repository on 
 
 ### Database
 
-The site uses a PostgreSQL database to store blog post, comments and other content. The deployment instructions below assume you have a PostgreSQL database to connect to.
+The site uses a PostgreSQL database to store blog posts, comments and other content. The deployment instructions below assume you have a PostgreSQL database to connect to.
 
 Creating a PostgreSQL database is beyond the scope of this document. Please refer to the [PostgreSQL documentation](https://www.postgresql.org/docs/) for more information on creating and managing a PostgreSQL database.
 
@@ -574,13 +580,13 @@ If you have a working PostgreSQL database and Cloudinary account, the site can b
 1. Add these config variables:
     - Key=SECRET_KEY, Value=(a secure secret key, different to the one in `env.py`)
     - Key=DATABASE_URL, Value=(your database's URL)
-    - Key=CLOUDINARY_URL, Value=(your secret cloudinary URL, created using the steps in the Local Deployment section above)
+    - Key=CLOUDINARY_URL, Value=(your secret Cloudinary URL, created using the steps in the Local Deployment section above)
 1. Add a buildpack for Python.
 1. Connect the Heroku app to your GitHub repository.
 1. Deploy the main branch in Heroku.
 1. Wait for the site to deploy and then check that it has deployed correctly.
 
-These steps require knowledge of Heroku that is beyond the scope of this document. If you need additional information to set up your Heroku deployment, you should read the official [Heroku documentation](https://devcenter.heroku.com/).
+These steps require knowledge of Heroku that is beyond the scope of this document. If you need additional information to set up your Heroku deployment, read the official [Heroku documentation](https://devcenter.heroku.com/).
 
 ## Credits
 
@@ -635,7 +641,7 @@ These steps require knowledge of Heroku that is beyond the scope of this documen
 
 #### Fonts
 
-- I used custom fonts from [Google Fonts](https://fonts.google.com/). The exact fonts are listed at the top of this readme.
+- I used custom fonts from [Google Fonts](https://fonts.google.com/). The exact fonts are listed at the top of this document.
 
 #### Content
 
@@ -653,6 +659,7 @@ These steps require knowledge of Heroku that is beyond the scope of this documen
 - I used [Code Institute's README.md template](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md) as the starting point for this document.
 - I used [Am I Responsive](https://ui.dev/amiresponsive) to generate the multi-screen image shown at the start of the README.
 - I used [Green Shot](https://getgreenshot.org/) to add text and arrows to some screenshots.
+- I used [Grammarly]() to check spelling and grammar in README.md and TESTING.md.
 
 ## People
 
