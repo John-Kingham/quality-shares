@@ -388,6 +388,10 @@ This is user story #14 and #18. This is effectively a contact form that users ca
 
 This is user story #20. The plan was for users to be able to view all posts for one category by clicking on the category of a single post, or via links on the homepage or a category dropdown selector on the Post Archive page. This should be technically simple and could easily be implemented in a future release.
 
+#### Separate development and production databases
+
+This isn't recorded as a user story, but the site currently uses the same database in its development and production environments. Best practice is to use separate databases, and this would be a high-priority feature for a future release.
+
 ## Project Management
 
 I managed the project using a somewhat simplified combination of [AgilePM](https://www.agilebusiness.org/agileprojectmanager.html) (previously known as DSDM) and [Scrum](https://www.scrum.org/).
@@ -474,6 +478,79 @@ The website was thoroughly tests, with all tests documented in [TESTING.md](./do
 
 ## Deployment
 
+This repository can be cloned to make a copy on your local machine or forked to make a copy on your GitHub account.
 
+### Cloning
+
+You can clone the repository using these steps:
+
+1. Go to the [GitHub repository](https://github.com/John-Kingham/quality_shares).
+2. Click on the green Code button near the top.
+3. Select whether to clone using HTTPS, SSH, or GitHub CLI, and copy the URL to your clipboard.
+4. On your local machine, open your terminal (or Git Bash, depending on your operating system).
+5. Change the current working directory to the location where you want the cloned directory.
+6. In your terminal, type the following command to clone the repository:
+	- `git clone https://github.com/John-Kingham/quality_shares`
+7. Press Enter to create your local clone.
+
+### Forking
+
+By forking the GitHub repository, you make a copy of the original repository on your GitHub account to view and/or make changes without affecting the original repository. You can fork this repository using the following steps:
+
+1. Log in to GitHub and go to the [GitHub repository](https://github.com/John-Kingham/quality_shares).
+2. Find the Fork button at the top of the page and click it.
+3. You should now have a copy of the repository in your own GitHub account.
+
+### Database
+
+The site uses a PostgreSQL database to store blog post, comments and other content. The deployment instructions below assume you have a PostgreSQL database to connect to.
+
+Creating a PostgreSQL database is beyond the scope of this document. Please refer to the [PostgreSQL documentation](https://www.postgresql.org/docs/) for more information on creating and managing a PostgreSQL database.
+
+### Image Hosting
+
+The site uses [Cloudinary](https://cloudinary.com/) to store images for blog posts and other content in the cloud. The deployment instructions below assume you have a Cloudinary account where you can store images.
+
+### Site Hosting
+
+The site has been deployed to the Internet using [Heroku](https://www.heroku.com/). The deployment instructions below assume you have a suitable Heroku account.
+
+### Local Deployment
+
+To run the site locally, you will need to install the required libraries and set up access to your database using the steps below:
+
+1. Clone the remote repository to your local machine using the instructions above.
+1. Start a Python virtual environment of your choice (to avoid loading required libraries into your global environment).
+1. Run `pip install -r requirements.txt` to install required libraries.
+1. Create a file in the root directory called `env.py` (this is in `.gitignore`, so it wasn't part of the cloned repository).
+1. In `env.py`, set the following environment variable defaults:
+    - DEBUG (set it to True; this forces the development environment to run in debug mode by default)
+    - SECRET_KEY (set it to be a suitably secure secret key)
+    - DATABASE_URL (your database's URL)
+    - CLOUDINARY_URL (Go to [Cloudinary API Keys](https://console.cloudinary.com/app/c-f3af02b8364ecf9852b2cd2c73bedb/settings/api-keys) and create the  environment variable value in this format: 
+      - `cloudinary://<your_api_key>:<your_api_secret>@xyz`
+1. The site is now connected to your database, so run `python manage.py migrate` to create both built-in and site-specific database tables.
+1. Run `python manage.py createsuperuser` to create an admin account. Admins can log into the site using the `/admin/` path.
+1. Run `python manage.py collectstatic`. This copies static files into a directory called `staticfiles` which enables static files to be loaded correctly when running the site locally.
+1. Run `python manage.py runserver` to launch the site locally using Django's built-in server.
+1. Click the link in the terminal where it says `Starting development server at <your-local-url>` and the site should launch correctly.
+
+### Deployment to Heroku
+
+The site can be deployed to the Internet using Heroku by following these steps (which assume you have a working PostgreSQL database and Cloudinary account):
+
+1. Fork or clone this repository using the instructions above.
+1. If you cloned this repository, push your clone up to a remote repo on your GitHub account.
+1. In your Heroku account, create a new app.
+1. Add these config variables:
+    - Key=SECRET_KEY, Value=(a secure secret key, different to the one in `env.py`)
+    - Key=DATABASE_URL, Value=(your database's URL)
+    - Key=CLOUDINARY_URL, Value=(your secret cloudinary URL, created using the steps in the Local Deployment section above)
+1. Add a buildpack for Python.
+1. Connect the Heroku app to your GitHub repository.
+1. Deploy the main branch in Heroku.
+1. Wait for the site to deploy and then check that it has deployed correctly.
+
+These steps require knowledge of Heroku that is beyond the scope of this document. If you need additional information to set up your Heroku deployment, you should read the official [Heroku documentation](https://devcenter.heroku.com/).
 
 ## Credits
