@@ -162,6 +162,12 @@ The admin site is a built-in part of Django, so I didn't test it as thoroughly a
 |Category editing|Categories can be CRUDed on the back-end|CRUDed a category on the back-end|As expected|![Category CRUD](./images/testing/category-admin-crud.png)|
 |Category front-end|Changes to categories are visible on the front end|Updated a category and checked the front-end|As expected|![Category front-end](./images/testing/category-front-end.png)|
 
+## Acceptance Tests
+
+Each user story has one or more acceptance criteria that has to be met before the story can be considered done. You can read the acceptance criteria for each user story in the [GitHub Project](https://github.com/users/John-Kingham/projects/14).
+
+All acceptance criteria have been met for implemented user stories.
+
 ## Colour Contrast
 
 I tested colour contrasts using [colourcontrast.cc](https://colourcontrast.cc/) because the [WebAIM](https://webaim.org/) site was down.
